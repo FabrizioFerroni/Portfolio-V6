@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fabrizio Developer</title>
     <!-- Fuente de letras -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- Declaramos los estilos css puros -->
     <!-- CSS para dispositivos desktop -->
@@ -24,13 +24,15 @@
     <header>
         <!-- Menu principal -->
         <nav>
-            <div>
-                <p>Fabrizio Developer</p>
+            <div class="nav__title">
+                <a href="/">
+                    <h3>Fabrizio Developer</h3>
+                </a>
             </div>
-            <div>
+            <div class="nav__menu">
                 <ul>
                     <li>
-                        <a href="/">Inicio</a>
+                        <a class="active" href="/">Inicio</a>
                     </li>
                     <li>
                         <a href="#quien-soy">Quien soy</a>
@@ -48,81 +50,36 @@
             </div>
         </nav>
     </header>
-    <section id="inicio">
-        <div>
-            <h3>Hola, soy</h3>
-            <h1>Fabrizio Ferroni</h1>
-            <p>
-                Desarrollador júnior Full Stack. Creo experiencias web perfectas para usuarios finales.
-            </p>
+    <div class="container">
+        <section id="inicio">
             <div>
-                <button>Quien soy</button>
-                <button>Mi CV</button>
-            </div>
-        </div>
-        <div>
-            <figure>Circulo</figure>
-            <img src="" alt="Mi foto perfil" />
-        </div>
-    </section>
-    <section id="quien-soy">
-        <div>
-            <h2>Quien soy</h2>
-            <p>
-                Hola, mi nombre es Fabrizio Ferroni, soy un desarrollador web junior Full Stack, diseñador de interfaz de usuario y desarrollador móvil. He perfeccionado mis habilidades en desarrollo web y tengo una comprensión básica de los principios de diseño avanzado
-                de la interfaz de usuario. Aquí están las principales habilidades que tengo.
-            </p>
-            <div>
-                <h1>1+</h1>
-                <h2>
-                    Años de experiencia. Especializados en la creación de aplicaciones, al tiempo que garantizan una perfecta experiencia web para usuarios finales.
-                </h2>
+                <h3>Hola, soy</h3>
+                <h1>Fabrizio Ferroni</h1>
+                <p>
+                    Desarrollador júnior Full Stack. Creo experiencias web perfectas para usuarios finales.
+                </p>
+                <div>
+                    <button>Quien soy</button>
+                    <button>Mi CV</button>
+                </div>
             </div>
             <div>
-                <!-- CARD 1 -->
-                <div>
-                    <div>
-                        <img src="" alt="Logo servicio" />
-                    </div>
-                    <div>
-                        <h3>UI & UX DESINGINING</h3>
-                    </div>
-                </div>
-                <!-- FIN CARD 1 -->
-                <!-- CARD 2 -->
-                <div>
-                    <div>
-                        <img src="" alt="Logo servicio" />
-                    </div>
-                    <div>
-                        <h3>WEB DEVELOPMENT</h3>
-                    </div>
-                </div>
-                <!-- FIN CARD 2 -->
-                <!-- CARD 3 -->
-                <div>
-                    <div>
-                        <img src="" alt="Logo servicio" />
-                    </div>
-                    <div>
-                        <h3>MOBILE DEVELOPMENT</h3>
-                    </div>
-                </div>
-                <!-- FIN CARD 3 -->
-                <!-- CARD 4 -->
-                <div>
-                    <div>
-                        <img src="" alt="Logo servicio" />
-                    </div>
-                    <div>
-                        <h3>WEB SCRAPING PYTHON</h3>
-                    </div>
-                </div>
-                <!-- FIN CARD 4 -->
+                <figure>Circulo</figure>
+                <img src="" alt="Mi foto perfil" />
             </div>
+        </section>
+        <section id="quien-soy">
             <div>
+                <h2>Quien soy</h2>
+                <p>
+                    Hola, mi nombre es Fabrizio Ferroni, soy un desarrollador web junior Full Stack, diseñador de interfaz de usuario y desarrollador móvil. He perfeccionado mis habilidades en desarrollo web y tengo una comprensión básica de los principios de diseño avanzado
+                    de la interfaz de usuario. Aquí están las principales habilidades que tengo.
+                </p>
                 <div>
-                    <h2>Los servicios que ofrezco:</h2>
+                    <h1>1+</h1>
+                    <h2>
+                        Años de experiencia. Especializados en la creación de aplicaciones, al tiempo que garantizan una perfecta experiencia web para usuarios finales.
+                    </h2>
                 </div>
                 <div>
                     <!-- CARD 1 -->
@@ -131,8 +88,7 @@
                             <img src="" alt="Logo servicio" />
                         </div>
                         <div>
-                            <h2>DISEÑO DE UI Y UX</h2>
-                            <p>Diseño hermosas interfaces web con Figma y Adobe XD</p>
+                            <h3>UI & UX DESINGINING</h3>
                         </div>
                     </div>
                     <!-- FIN CARD 1 -->
@@ -142,10 +98,7 @@
                             <img src="" alt="Logo servicio" />
                         </div>
                         <div>
-                            <h2>DESARROLLO WEB</h2>
-                            <p>
-                                Creo hermosas interfaces con HTML, CSS y JavaScript simples y también marcos como Angular y ReactJS
-                            </p>
+                            <h3>WEB DEVELOPMENT</h3>
                         </div>
                     </div>
                     <!-- FIN CARD 2 -->
@@ -155,10 +108,7 @@
                             <img src="" alt="Logo servicio" />
                         </div>
                         <div>
-                            <h2>DESARROLLO MÓVIL</h2>
-                            <p>
-                                Soy un desarrollador móvil experto. Tengo experiencia usando Flutter y React Native.
-                            </p>
+                            <h3>MOBILE DEVELOPMENT</h3>
                         </div>
                     </div>
                     <!-- FIN CARD 3 -->
@@ -168,169 +118,221 @@
                             <img src="" alt="Logo servicio" />
                         </div>
                         <div>
-                            <h2>CONTROL DE VERSIONES</h2>
-                            <p>
-                                Puedo usar bien los sistemas de control de versiones, y Git y Mercurial son mi herramienta preferida.
-                            </p>
+                            <h3>WEB SCRAPING PYTHON</h3>
                         </div>
                     </div>
                     <!-- FIN CARD 4 -->
-                    <!-- CARD 5 -->
+                </div>
+                <div>
+                    <div>
+                        <h2>Los servicios que ofrezco:</h2>
+                    </div>
+                    <div>
+                        <!-- CARD 1 -->
+                        <div>
+                            <div>
+                                <img src="" alt="Logo servicio" />
+                            </div>
+                            <div>
+                                <h2>DISEÑO DE UI Y UX</h2>
+                                <p>Diseño hermosas interfaces web con Figma y Adobe XD</p>
+                            </div>
+                        </div>
+                        <!-- FIN CARD 1 -->
+                        <!-- CARD 2 -->
+                        <div>
+                            <div>
+                                <img src="" alt="Logo servicio" />
+                            </div>
+                            <div>
+                                <h2>DESARROLLO WEB</h2>
+                                <p>
+                                    Creo hermosas interfaces con HTML, CSS y JavaScript simples y también marcos como Angular y ReactJS
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FIN CARD 2 -->
+                        <!-- CARD 3 -->
+                        <div>
+                            <div>
+                                <img src="" alt="Logo servicio" />
+                            </div>
+                            <div>
+                                <h2>DESARROLLO MÓVIL</h2>
+                                <p>
+                                    Soy un desarrollador móvil experto. Tengo experiencia usando Flutter y React Native.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FIN CARD 3 -->
+                        <!-- CARD 4 -->
+                        <div>
+                            <div>
+                                <img src="" alt="Logo servicio" />
+                            </div>
+                            <div>
+                                <h2>CONTROL DE VERSIONES</h2>
+                                <p>
+                                    Puedo usar bien los sistemas de control de versiones, y Git y Mercurial son mi herramienta preferida.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FIN CARD 4 -->
+                        <!-- CARD 5 -->
+                        <div>
+                            <div>
+                                <img src="" alt="Logo servicio" />
+                            </div>
+                            <div>
+                                <h2>NPM Y NODEJS</h2>
+                                <p>
+                                    Tengo una comprensión básica de NPM. También puedo desarrollar aplicaciones de propósito general con NodeJS
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FIN CARD 5 -->
+                        <!-- CARD 6 -->
+                        <div>
+                            <div>
+                                <img src="" alt="Logo servicio" />
+                            </div>
+                            <div>
+                                <h2>WEB SCRAPING</h2>
+                                <p>
+                                    Puedo recopilar contenido y datos de Internet y luego manipularlos y analizarlos según sea necesario.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FIN CARD 6 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos">
+            <div>
+                <div>
+                    <h2>Proyectos destacados:</h2>
+                    <p>
+                        He trabajado en muchos proyectos a lo largo de mi carrera como desarrollador web. Estos son algunos de mis proyectos del mundo real.
+                    </p>
+                </div>
+                <div>
+                    <!-- CARD 1 -->
                     <div>
                         <div>
-                            <img src="" alt="Logo servicio" />
+                            <img src="" alt="Img del proyecto" />
                         </div>
                         <div>
-                            <h2>NPM Y NODEJS</h2>
+                            <h2>TWINDER</h2>
+                            <div>
+                                <span>Ultima actualizacion: hace 5 dias</span>
+                                <span>Estado: Publico</span>
+                            </div>
                             <p>
-                                Tengo una comprensión básica de NPM. También puedo desarrollar aplicaciones de propósito general con NodeJS
+                                Una aplicación de geolocalización en vivo para encontrar tweets y usuarios de Twitter a tu alrededor.
                             </p>
+                            <div>
+                                <button>Ver en vivo</button>
+                                <button>Github Repo</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- FIN CARD 5 -->
-                    <!-- CARD 6 -->
+                    <!-- FIN CARD 1 -->
+                    <!-- CARD 2 -->
                     <div>
                         <div>
-                            <img src="" alt="Logo servicio" />
+                            <img src="" alt="Img del proyecto" />
                         </div>
                         <div>
-                            <h2>WEB SCRAPING</h2>
+                            <h2>LIVENTS</h2>
+                            <div>
+                                <span>Ultima actualizacion: hace 5 dias</span>
+                                <span>Estado: Publico</span>
+                            </div>
                             <p>
-                                Puedo recopilar contenido y datos de Internet y luego manipularlos y analizarlos según sea necesario.
+                                Una aplicación de transmisión de video con geolocalización en vivo, para transmitir eventos.
                             </p>
+                            <div>
+                                <button>Ver en vivo</button>
+                                <button>Github Repo</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- FIN CARD 6 -->
+                    <!-- FIN CARD 2 -->
+                    <!-- CARD 3 -->
+                    <div>
+                        <div>
+                            <img src="" alt="Img del proyecto" />
+                        </div>
+                        <div>
+                            <h2>MOOVE</h2>
+                            <div>
+                                <span>Ultima actualizacion: hace 5 dias</span>
+                                <span>Estado: Publico</span>
+                            </div>
+                            <p>
+                                Aplicación móvil para reservar recogida y devolución instantánea en las principales ciudades.
+                            </p>
+                            <div>
+                                <button>Ver en vivo</button>
+                                <button>Github Repo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARD 3 -->
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="proyectos">
-        <div>
-            <div>
-                <h2>Proyectos destacados:</h2>
-                <p>
-                    He trabajado en muchos proyectos a lo largo de mi carrera como desarrollador web. Estos son algunos de mis proyectos del mundo real.
-                </p>
-            </div>
-            <div>
-                <!-- CARD 1 -->
                 <div>
-                    <div>
-                        <img src="" alt="Img del proyecto" />
-                    </div>
-                    <div>
-                        <h2>TWINDER</h2>
-                        <div>
-                            <span>Ultima actualizacion: hace 5 dias</span>
-                            <span>Estado: Publico</span>
-                        </div>
-                        <p>
-                            Una aplicación de geolocalización en vivo para encontrar tweets y usuarios de Twitter a tu alrededor.
-                        </p>
-                        <div>
-                            <button>Ver en vivo</button>
-                            <button>Github Repo</button>
-                        </div>
-                    </div>
+                    <button>Ver mas en Github</button>
                 </div>
-                <!-- FIN CARD 1 -->
-                <!-- CARD 2 -->
-                <div>
-                    <div>
-                        <img src="" alt="Img del proyecto" />
-                    </div>
-                    <div>
-                        <h2>LIVENTS</h2>
-                        <div>
-                            <span>Ultima actualizacion: hace 5 dias</span>
-                            <span>Estado: Publico</span>
-                        </div>
-                        <p>
-                            Una aplicación de transmisión de video con geolocalización en vivo, para transmitir eventos.
-                        </p>
-                        <div>
-                            <button>Ver en vivo</button>
-                            <button>Github Repo</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- FIN CARD 2 -->
-                <!-- CARD 3 -->
-                <div>
-                    <div>
-                        <img src="" alt="Img del proyecto" />
-                    </div>
-                    <div>
-                        <h2>MOOVE</h2>
-                        <div>
-                            <span>Ultima actualizacion: hace 5 dias</span>
-                            <span>Estado: Publico</span>
-                        </div>
-                        <p>
-                            Aplicación móvil para reservar recogida y devolución instantánea en las principales ciudades.
-                        </p>
-                        <div>
-                            <button>Ver en vivo</button>
-                            <button>Github Repo</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- FIN CARD 3 -->
             </div>
+        </section>
+        <section id="contactame">
             <div>
-                <button>
-                    Ver mas en Github
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="contactame">
-        <div>
-            <div>
-                <h2>Contactate conmigo:</h2>
-                <h3>¿Satisfecho conmigo?</h3>
-                <h3>Por favor póngase en contacto conmigo</h3>
                 <div>
-                    <img src="" alt="RRSS Email">
-                    <img src="" alt="RRSS Github">
-                    <img src="" alt="RRSS Linkedin">
+                    <h2>Contactate conmigo:</h2>
+                    <h3>¿Satisfecho conmigo?</h3>
+                    <h3>Por favor póngase en contacto conmigo</h3>
+                    <div>
+                        <img src="" alt="RRSS Email" />
+                        <img src="" alt="RRSS Github" />
+                        <img src="" alt="RRSS Linkedin" />
+                    </div>
+                </div>
+                <div>
+                    <h3>Contáctame, hagamos magia juntos</h3>
+                    <form action="/" method="POST">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" autocapitalize="words" autocomplete="off" />
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" autocapitalize="words" autocomplete="off" />
+                        </div>
+                        <div>
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" name="asunto" autocapitalize="words" autocomplete="off" />
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" id="" cols="20" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div>
-                <h3>Contáctame, hagamos magia juntos</h3>
-                <form action="/" method="POST">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" autocapitalize="words" autocomplete="off">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" autocapitalize="words" autocomplete="off">
-                    </div>
-                    <div>
-                        <label for="asunto">Asunto:</label>
-                        <input type="text" name="asunto" autocapitalize="words" autocomplete="off">
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="" cols="20" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer>
         <div>
             <div>
                 <h4>@2022 Fabrizio Developer</h4>
                 <div>
-                    <img src="" alt="RRSS Email">
-                    <img src="" alt="RRSS Github">
-                    <img src="" alt="RRSS Linkedin">
+                    <img src="" alt="RRSS Email" />
+                    <img src="" alt="RRSS Github" />
+                    <img src="" alt="RRSS Linkedin" />
                 </div>
             </div>
             <div>
