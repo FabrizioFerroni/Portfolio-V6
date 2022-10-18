@@ -615,30 +615,6 @@ nav .nav__menu ul li a img {
     padding-top: 24px;
 }
 
-
-/* 
-#contactame form input {
-    color: var(--white);
-    width: 472px;
-    height: 62px;
-    border-radius: 8px;
-    outline: none !important;
-    box-shadow: 0 0 0 0 transparent !important;
-    background: #301B1B;
-    border: 1px solid #301B1B;
-}
-
-#contactame form textarea {
-    color: var(--white);
-    background: #301B1B;
-    border: 1px solid #301B1B;
-    width: 472px;
-    height: 98px;
-    border-radius: 8px;
-    outline: none !important;
-    box-shadow: 0 0 0 0 transparent !important;
-} */
-
 #contactame form input,
 #contactame form select,
 #contactame form textarea,
@@ -721,6 +697,10 @@ nav .nav__menu ul li a img {
     background: var(--form-input);
     border: 1px solid var(--form-input);
     border-radius: 8px;
+}
+
+#contactame form .fake_placeholder select option::selection {
+    background-color: var(--primary-color);
 }
 
 

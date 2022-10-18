@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <!-- Menu principal -->
         <nav>
             <div class="nav__title">
@@ -29,27 +29,27 @@
                 </a>
             </div>
             <div class="nav__menu">
-                <ul>
+                <ul class="nav__navbar">
                     <li>
-                        <a class="active" href="/">
+                        <a class="nav__links" href="/">
                             <ion-icon class="icon__menu" name="home"></ion-icon>
                             Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="#quien-soy">
+                        <a class="nav__links" href="#quien-soy">
                             <ion-icon class="icon__menu" name="person"></ion-icon>
                             Quien soy
                         </a>
                     </li>
                     <li>
-                        <a href="#proyectos">
+                        <a class="nav__links" href="#proyectos">
                             <ion-icon class="icon__menu" name="code-working"></ion-icon>
                             Mis proyectos
                         </a>
                     </li>
                     <li>
-                        <a href="#contactame">
+                        <a class="nav__links" href="#contactame">
                             <ion-icon class="icon__menu" name="send"></ion-icon>
                             Contactame
                         </a>
@@ -62,7 +62,7 @@
         </nav>
     </header>
     <div class="container">
-        <section id="inicio">
+        <section id="inicio" class="page-section">
             <div>
                 <h3>Hola, soy</h3>
                 <h1>Fabrizio Ferroni</h1>
@@ -88,7 +88,7 @@
                 <img src="public/img/profile.png" alt="Mi foto perfil" />
             </div>
         </section>
-        <section id="quien-soy">
+        <section id="quien-soy" class="page-section">
             <div>
                 <h2 class="quien-soy__title">Quien soy</h2>
                 <p class="quien-soy__descripcion">
@@ -186,7 +186,7 @@
                 </div>
             </div>
         </section>
-        <section id="proyectos">
+        <section id="proyectos" class="page-section">
             <div>
                 <div>
                     <h2 class="proyectos__title">Proyectos destacados:</h2>
@@ -260,7 +260,7 @@
                 </div>
             </div>
         </section>
-        <section id="contactame">
+        <section id="contactame" class="page-section">
             <div>
                 <h2>Contactate conmigo:</h2>
                 <h3 class="contactame__title">¿Satisfecho conmigo?</h3>
@@ -344,6 +344,12 @@
     <!-- Inicializacion de scripts js -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
 
     <script src="public/js/main.js"></script>
 </body>
