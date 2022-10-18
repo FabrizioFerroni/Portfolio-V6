@@ -485,6 +485,10 @@ nav .nav__menu ul li a img {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #proyectos .proyectos__cards .cards .proyectos__buttons .github-btn {
@@ -498,6 +502,14 @@ nav .nav__menu ul li a img {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#proyectos .proyectos__cards .cards .proyectos__buttons .icon__proyectos__btn {
+    padding-left: 5px;
 }
 
 #proyectos .mas__proyectos {
