@@ -10,12 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap" rel="stylesheet" />
-
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <!-- Iconos google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Declaramos los estilos css puros -->
     <!-- CSS para dispositivos desktop -->
     <link rel="stylesheet" href="public/css/desktop.css" />
     <!-- CSS para dispositivos moviles -->
-    <link rel="stylesheet" href="public/css/movil.css" />
+    <link rel="stylesheet" media="( max-width: 767px )" href="public/css/movil.css" />
     <!-- favicon para la pestaña -->
     <link rel="shortcut icon" href="public/img/faviconff.ico" type="image/x-icon" />
 </head>
@@ -58,150 +62,113 @@
                 <p>
                     Desarrollador júnior Full Stack. Creo experiencias web perfectas para usuarios finales.
                 </p>
-                <div>
-                    <button>Quien soy</button>
-                    <button>Mi CV</button>
+                <div class="buttons__inicio">
+                    <a href="#quien-soy" class="btn-quien-soy">
+              Quien soy <span class="material-symbols-sharp"> person </span>
+            </a>
+                    <a href="cv/CV-Fabrizio-Ferroni.pdf" download="CV-Fabrizio-Ferroni.pdf" class="btn-mi-cv">
+              Mi CV <span class="material-symbols-sharp"> visibility </span>
+            </a>
+                    <!-- <embed src="cv/CV-Fabrizio-Ferroni.pdf#toolbar=0" width="500" height="375"> -->
                 </div>
             </div>
             <div>
-                <figure>Circulo</figure>
-                <img src="" alt="Mi foto perfil" />
+                <!-- <figure>Circulo</figure> -->
+                <img src="public/img/profile.png" alt="Mi foto perfil" />
             </div>
         </section>
         <section id="quien-soy">
             <div>
-                <h2>Quien soy</h2>
-                <p>
+                <h2 class="quien-soy__title">Quien soy</h2>
+                <p class="quien-soy__descripcion">
                     Hola, mi nombre es Fabrizio Ferroni, soy un desarrollador web junior Full Stack, diseñador de interfaz de usuario y desarrollador móvil. He perfeccionado mis habilidades en desarrollo web y tengo una comprensión básica de los principios de diseño avanzado
                     de la interfaz de usuario. Aquí están las principales habilidades que tengo.
                 </p>
-                <div>
+                <div class="quien-soy__years">
                     <h1>1+</h1>
                     <h2>
                         Años de experiencia. Especializados en la creación de aplicaciones, al tiempo que garantizan una perfecta experiencia web para usuarios finales.
                     </h2>
                 </div>
-                <div>
+                <div class="quien-soy__cards">
                     <!-- CARD 1 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Logo servicio" />
-                        </div>
-                        <div>
-                            <h3>UI & UX DESINGINING</h3>
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/ux-1.png" title="ux" alt="Logo servicio" />
+                        <h3>UI & UX DESINGINING</h3>
                     </div>
                     <!-- FIN CARD 1 -->
                     <!-- CARD 2 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Logo servicio" />
-                        </div>
-                        <div>
-                            <h3>WEB DEVELOPMENT</h3>
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/web-programming-1.png" alt="Logo servicio" />
+                        <h3>WEB DEVELOPMENT</h3>
                     </div>
                     <!-- FIN CARD 2 -->
                     <!-- CARD 3 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Logo servicio" />
-                        </div>
-                        <div>
-                            <h3>MOBILE DEVELOPMENT</h3>
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/app-development.png" alt="Logo servicio" />
+                        <h3>MOBILE DEVELOPMENT</h3>
                     </div>
                     <!-- FIN CARD 3 -->
                     <!-- CARD 4 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Logo servicio" />
-                        </div>
-                        <div>
-                            <h3>WEB SCRAPING PYTHON</h3>
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/web-scraping-1.png" alt="Logo servicio" />
+                        <h3>WEB SCRAPING WITH PHYTON</h3>
                     </div>
                     <!-- FIN CARD 4 -->
                 </div>
-                <div>
-                    <div>
-                        <h2>Los servicios que ofrezco:</h2>
-                    </div>
-                    <div>
+                <div class="quien-soy__services">
+                    <h2 class="h2__title">Los servicios que ofrezco:</h2>
+                    <div class="quien-soy__cards__services">
                         <!-- CARD 1 -->
-                        <div>
-                            <div>
-                                <img src="" alt="Logo servicio" />
-                            </div>
-                            <div>
-                                <h2>DISEÑO DE UI Y UX</h2>
-                                <p>Diseño hermosas interfaces web con Figma y Adobe XD</p>
-                            </div>
+                        <div class="cards">
+                            <img src="public/img/ux-services.png" alt="Logo servicio" />
+                            <h2>DISEÑO DE UI Y UX</h2>
+                            <p>Diseño hermosas interfaces web con Figma y Adobe XD</p>
                         </div>
                         <!-- FIN CARD 1 -->
                         <!-- CARD 2 -->
-                        <div>
-                            <div>
-                                <img src="" alt="Logo servicio" />
-                            </div>
-                            <div>
-                                <h2>DESARROLLO WEB</h2>
-                                <p>
-                                    Creo hermosas interfaces con HTML, CSS y JavaScript simples y también marcos como Angular y ReactJS
-                                </p>
-                            </div>
+                        <div class="cards">
+                            <img src="public/img/web.png" alt="Logo servicio" />
+                            <h2>DESARROLLO WEB</h2>
+                            <p>
+                                Creo hermosas interfaces con HTML, CSS y JavaScript simples y también marcos como Angular y ReactJS
+                            </p>
                         </div>
                         <!-- FIN CARD 2 -->
                         <!-- CARD 3 -->
-                        <div>
-                            <div>
-                                <img src="" alt="Logo servicio" />
-                            </div>
-                            <div>
-                                <h2>DESARROLLO MÓVIL</h2>
-                                <p>
-                                    Soy un desarrollador móvil experto. Tengo experiencia usando Flutter y React Native.
-                                </p>
-                            </div>
+                        <div class="cards">
+                            <img src="public/img/mobile.png" alt="Logo servicio" />
+                            <h2>DESARROLLO MÓVIL</h2>
+                            <p>
+                                Soy un desarrollador móvil experto. Tengo experiencia usando Flutter y React Native.
+                            </p>
                         </div>
                         <!-- FIN CARD 3 -->
                         <!-- CARD 4 -->
-                        <div>
-                            <div>
-                                <img src="" alt="Logo servicio" />
-                            </div>
-                            <div>
-                                <h2>CONTROL DE VERSIONES</h2>
-                                <p>
-                                    Puedo usar bien los sistemas de control de versiones, y Git y Mercurial son mi herramienta preferida.
-                                </p>
-                            </div>
+                        <div class="cards">
+                            <img src="public/img/git.png" alt="Logo servicio" />
+                            <h2>CONTROL DE VERSIONES</h2>
+                            <p>
+                                Puedo usar bien los sistemas de control de versiones, y Git y Mercurial son mi herramienta preferida.
+                            </p>
                         </div>
                         <!-- FIN CARD 4 -->
                         <!-- CARD 5 -->
-                        <div>
-                            <div>
-                                <img src="" alt="Logo servicio" />
-                            </div>
-                            <div>
-                                <h2>NPM Y NODEJS</h2>
-                                <p>
-                                    Tengo una comprensión básica de NPM. También puedo desarrollar aplicaciones de propósito general con NodeJS
-                                </p>
-                            </div>
+                        <div class="cards">
+                            <img src="public/img/node.png" alt="Logo servicio" />
+                            <h2>NPM Y NODEJS</h2>
+                            <p>
+                                Tengo una comprensión básica de NPM. También puedo desarrollar aplicaciones de propósito general con NodeJS
+                            </p>
                         </div>
                         <!-- FIN CARD 5 -->
                         <!-- CARD 6 -->
-                        <div>
-                            <div>
-                                <img src="" alt="Logo servicio" />
-                            </div>
-                            <div>
-                                <h2>WEB SCRAPING</h2>
-                                <p>
-                                    Puedo recopilar contenido y datos de Internet y luego manipularlos y analizarlos según sea necesario.
-                                </p>
-                            </div>
+                        <div class="cards">
+                            <img src="public/img/web-scrapping.png" alt="Logo servicio" />
+                            <h2>WEB SCRAPING</h2>
+                            <p>
+                                Puedo recopilar contenido y datos de Internet y luego manipularlos y analizarlos según sea necesario.
+                            </p>
                         </div>
                         <!-- FIN CARD 6 -->
                     </div>

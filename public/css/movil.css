@@ -1,0 +1,17 @@
+/* ESTILOS PARA MOVIL */
+
+:root {
+    --body: #180000;
+    --white: #ffffff;
+    --light-color: #f5f5f5;
+    --low-priority: #918181;
+    --primary-color: rgba(195, 39, 41, 1);
+    --secondary-color: #db3739;
+    --dark-color: #360000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
