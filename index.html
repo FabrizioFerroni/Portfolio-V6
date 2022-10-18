@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
-    <!-- Iconos google -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Declaramos los estilos css puros -->
     <!-- CSS para dispositivos desktop -->
     <link rel="stylesheet" href="public/css/desktop.css" />
@@ -36,16 +31,28 @@
             <div class="nav__menu">
                 <ul>
                     <li>
-                        <a class="active" href="/">Inicio</a>
+                        <a class="active" href="/">
+                            <ion-icon class="icon__menu" name="home"></ion-icon>
+                            Inicio
+                        </a>
                     </li>
                     <li>
-                        <a href="#quien-soy">Quien soy</a>
+                        <a href="#quien-soy">
+                            <ion-icon class="icon__menu" name="person"></ion-icon>
+                            Quien soy
+                        </a>
                     </li>
                     <li>
-                        <a href="#proyectos">Mis proyectos</a>
+                        <a href="#proyectos">
+                            <ion-icon class="icon__menu" name="code-working"></ion-icon>
+                            Mis proyectos
+                        </a>
                     </li>
                     <li>
-                        <a href="#contactame">Contactame</a>
+                        <a href="#contactame">
+                            <ion-icon class="icon__menu" name="send"></ion-icon>
+                            Contactame
+                        </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);"><img src="public/img/en.png" alt="Cambiar a ingles" /></a>
@@ -261,9 +268,16 @@
                     Por favor póngase en contacto conmigo
                 </h3>
                 <div>
-                    <a href="mailto:hola@fabriziodev.ar"><img src="public/img/email.png" alt="RRSS Email" /></a>
-                    <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank"><img src="public/img/github.png" alt="RRSS Github" /></a>
-                    <a href="https://www.linkedin.com/in/fabrizio-ferroni/"><img src="public/img/linkedin.png" alt="RRSS Linkedin" /></a>
+
+                    <a href="mailto:hola@fabriziodev.ar">
+                        <ion-icon class="icon__rrss" name="mail"></ion-icon>
+                    </a>
+                    <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank">
+                        <ion-icon class="icon__rrss" name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fabrizio-ferroni/">
+                        <ion-icon class="icon__rrss" name="logo-linkedin"></ion-icon>
+                    </a>
                 </div>
             </div>
             <div>
@@ -274,20 +288,20 @@
                     <div class="fake_placeholder">
                         <label>
                             <span>Nombre:</span>
-                            <input type="text" name="nombre" autocapitalize="words" autocomplete="off"/>
+                            <input type="text" class="input__pl" name="nombre" autocapitalize="words" autocomplete="off" placeholder="Ingrese su nombre y apellido"/>
                         </label>
                     </div>
                     <div class="fake_placeholder">
                         <label>
                             <span>Email:</span>
-                            <input type="email" name="email" autocapitalize="words" autocomplete="off"/>
+                            <input type="email" class="input__pl" name="email" autocapitalize="words" autocomplete="off" placeholder="Ingrese su email"/>
                         </label>
                     </div>
                     <div class="fake_placeholder">
                         <label>
                             <span >Asunto:</span>
                             <!-- <input type="text" name="asunto" autocapitalize="words" autocomplete="off" /> -->
-                            <select class="select-pd" name="asunto" id="">
+                            <select class="select-pd" name="asunto" id="test__select">
                                 <option class="hidden" value="" selected disabled>Seleccione una opción</option>
                                 <option value="prueba">Prueba</option>
                             </select>
@@ -296,7 +310,7 @@
                     <div class="fake_placeholder">
                         <label>
                             <span class="textarea">Mensaje:</span>
-                            <textarea name="mensaje" id="" cols="20" rows="10"></textarea>
+                            <textarea name="mensaje" class="textarea__pl" id="" cols="20" rows="10" placeholder="Ingrese su mensaje"></textarea>
                         </label>
                     </div>
                     <div>
@@ -308,19 +322,23 @@
     </div>
     <footer>
         <div>
-            <div>
-                <h4>@2022 Fabrizio Developer</h4>
-                <div>
-                    <img src="" alt="RRSS Email" />
-                    <img src="" alt="RRSS Github" />
-                    <img src="" alt="RRSS Linkedin" />
-                </div>
+            <h4>@2022 Fabrizio Developer</h4>
+            <div class="rrss__footer">
+                <a href="mailto:hola@fabriziodev.ar">
+                    <ion-icon class="icon__footer" name="mail"></ion-icon>
+                </a>
+                <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank">
+                    <ion-icon class="icon__footer" name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/fabrizio-ferroni/">
+                    <ion-icon class="icon__footer" name="logo-linkedin"></ion-icon>
+                </a>
             </div>
-            <div>
-                <a href="javascript:void(0);">Desarrollo Web</a>
-                <a href="javascript:void(0);">Soporte Técnico</a>
-                <p>Diseñado por <a href="javascript:void(0);">@fabriziodev</a></p>
-            </div>
+        </div>
+        <div class="enlaces__footer">
+            <a class="otros__links" href="javascript:void(0);">Desarrollo Web</a>
+            <a class="otros__links" href="javascript:void(0);">Soporte Técnico</a>
+            <p>Diseñado por <a href="javascript:void(0);">@fabriziodev</a></p>
         </div>
     </footer>
     <!-- Inicializacion de scripts js -->
