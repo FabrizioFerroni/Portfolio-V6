@@ -664,10 +664,15 @@ nav .nav__menu ul li a img {
 }
 
 #contactame form .fake_placeholder {
+    margin-top: 16px;
     border-radius: 8px;
     margin-bottom: 10px;
     background: var(--form-input);
     border: 1px solid var(--form-input);
+}
+
+#contactame form .fake_placeholder:first-child {
+    margin-top: 0px;
 }
 
 
