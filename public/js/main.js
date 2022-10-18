@@ -8,13 +8,13 @@
 
 /* Code for changing active 
           link on clicking */
-var btns =
+const btns =
     $("#header .nav__navbar .nav__links");
 
-for (var i = 0; i < btns.length; i++) {
+for (const i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click",
         function() {
-            var current = document
+            const current = document
                 .getElementsByClassName("active");
 
             current[0].className = current[0]
@@ -27,7 +27,7 @@ for (var i = 0; i < btns.length; i++) {
 /* Code for changing active 
 link on Scrolling */
 $(window).scroll(function() {
-    var distance = $(window).scrollTop();
+    const distance = $(window).scrollTop();
     $('.page-section').each(function(i) {
 
         if ($(this).position().top <=
