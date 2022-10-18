@@ -8,7 +8,8 @@
     --primary-color: rgba(195, 39, 41, 1);
     --secondary-color: #db3739;
     --dark-color: #360000;
-    --cards: rgba(189, 189, 189, 0.45)
+    --cards: rgba(189, 189, 189, 0.45);
+    --card-proyectos: #3D0404;
 }
 
 
@@ -367,4 +368,348 @@ nav .nav__menu ul li a img {
     font-size: 17px;
     line-height: 32px;
     text-align: center;
+}
+
+#proyectos .proyectos__title {
+    padding-top: 128px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--primary-color);
+}
+
+#proyectos .proyectos__description {
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#proyectos .proyectos__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 36px;
+}
+
+#proyectos .proyectos__cards .cards {
+    width: 343px;
+    height: 430px;
+    background: var(--card-proyectos);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#proyectos .proyectos__cards .cards h2 {
+    color: var(--primary-color);
+    padding-left: 16px;
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#proyectos .proyectos__cards .cards p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+#proyectos .proyectos__cards img {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#proyectos .proyectos__cards .cards .proyectos__update {
+    font-size: 12px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    color: var(--low-priority);
+}
+
+#proyectos .proyectos__cards .cards .proyectos__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    gap: 6px;
+}
+
+#proyectos .proyectos__cards .cards .proyectos__buttons .live-btn {
+    margin-right: 18px;
+    width: 145px;
+    height: 43px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#proyectos .proyectos__cards .cards .proyectos__buttons .github-btn {
+    width: 144px;
+    height: 43px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 8px;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#proyectos .mas__proyectos {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+#proyectos .mas__proyectos a {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+}
+
+#proyectos .mas__proyectos a:hover {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--primary-color);
+}
+
+#proyectos .mas__proyectos a .icon__proyetos {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+#contactame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 128px;
+}
+
+#contactame h2 {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+#contactame .contactame__title {
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#contactame .contactame__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#contactame img {
+    padding-top: 6px;
+    /* width: 32px;
+    height: 32px; */
+    filter: invert(10);
+}
+
+#contactame a {
+    padding-right: 16px;
+}
+
+#contactame a:last-child {
+    padding-right: 0px;
+}
+
+#contactame .contactame__form__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#contactame form {
+    padding-top: 24px;
+}
+
+
+/* 
+#contactame form input {
+    color: var(--white);
+    width: 472px;
+    height: 62px;
+    border-radius: 8px;
+    outline: none !important;
+    box-shadow: 0 0 0 0 transparent !important;
+    background: #301B1B;
+    border: 1px solid #301B1B;
+}
+
+#contactame form textarea {
+    color: var(--white);
+    background: #301B1B;
+    border: 1px solid #301B1B;
+    width: 472px;
+    height: 98px;
+    border-radius: 8px;
+    outline: none !important;
+    box-shadow: 0 0 0 0 transparent !important;
+} */
+
+#contactame form input,
+#contactame form select,
+#contactame form textarea,
+#contactame form span {
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    padding: 0;
+    resize: none;
+    width: 472px;
+    height: 62px;
+    background: transparent;
+    color: var(--white);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#contactame form select option.hidden {
+    display: none;
+}
+
+#contactame form textarea {
+    width: 472px;
+    height: 98px;
+    padding-top: 15px;
+}
+
+#contactame form .fake_placeholder {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #301B1B;
+    border: 1px solid #301B1B;
+}
+
+
+/* el label emula el aspecto del input */
+
+#contactame form .fake_placeholder label {
+    border: 0px solid var(--white);
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+
+#contactame form .fake_placeholder span {
+    color: var(--white);
+    display: inline-block;
+    left: 2px;
+    padding: 5px;
+    position: absolute;
+    transition: 0.25s;
+    top: 19px;
+    left: 16px;
+    width: auto;
+}
+
+#contactame form .fake_placeholder span.reubicar {
+    color: var(--primary-color);
+    font-size: 16px;
+    top: -5px;
+}
+
+#contactame form .fake_placeholder span.reubicar:focus {
+    color: var(--white);
+}
+
+#contactame form .fake_placeholder span.textarea {
+    top: 37px;
+}
+
+
+/* #contactame form .fake_placeholder span.select {
+    top: -5px;
+} */
+
+#contactame form .fake_placeholder .select-pd {
+    padding-left: 100px;
+}
+
+#contactame form button {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    width: 174px;
+    height: 50px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+#contactame form button .contactame__icon {
+    padding-left: 10px;
+}
+
+#contactame form button:hover {
+    background: var(--white);
+    border: 1px solid var(--white);
+    color: var(--primary-color)
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 90px 136px;
+    }
+    nav {
+        padding: 19px 136px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services {
+        gap: 35px;
+    }
 }

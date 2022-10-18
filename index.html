@@ -64,10 +64,14 @@
                 </p>
                 <div class="buttons__inicio">
                     <a href="#quien-soy" class="btn-quien-soy">
-              Quien soy <span class="material-symbols-sharp"> person </span>
+              Quien soy
+              <ion-icon name="person"></ion-icon>
+              <!-- <span class="material-symbols-sharp"> person </span> -->
             </a>
                     <a href="cv/CV-Fabrizio-Ferroni.pdf" download="CV-Fabrizio-Ferroni.pdf" class="btn-mi-cv">
-              Mi CV <span class="material-symbols-sharp"> visibility </span>
+              Mi CV
+              <ion-icon name="eye"></ion-icon>
+              <!-- <span class="material-symbols-sharp"> visibility </span> -->
             </a>
                     <!-- <embed src="cv/CV-Fabrizio-Ferroni.pdf#toolbar=0" width="500" height="375"> -->
                 </div>
@@ -178,117 +182,127 @@
         <section id="proyectos">
             <div>
                 <div>
-                    <h2>Proyectos destacados:</h2>
-                    <p>
+                    <h2 class="proyectos__title">Proyectos destacados:</h2>
+                    <p class="proyectos__description">
                         He trabajado en muchos proyectos a lo largo de mi carrera como desarrollador web. Estos son algunos de mis proyectos del mundo real.
                     </p>
                 </div>
-                <div>
+                <div class="proyectos__cards">
                     <!-- CARD 1 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Img del proyecto" />
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/twinder.png" alt="Img del proyecto" />
                         <div>
                             <h2>TWINDER</h2>
-                            <div>
+                            <div class="proyectos__update">
                                 <span>Ultima actualizacion: hace 5 dias</span>
                                 <span>Estado: Publico</span>
                             </div>
                             <p>
                                 Una aplicación de geolocalización en vivo para encontrar tweets y usuarios de Twitter a tu alrededor.
                             </p>
-                            <div>
-                                <button>Ver en vivo</button>
-                                <button>Github Repo</button>
+                            <div class="proyectos__buttons">
+                                <button class="live-btn">Ver en vivo</button>
+                                <button class="github-btn">Github Repo</button>
                             </div>
                         </div>
                     </div>
                     <!-- FIN CARD 1 -->
                     <!-- CARD 2 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Img del proyecto" />
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/livents2.png" style="opacity: 40%" alt="Img del proyecto" />
                         <div>
                             <h2>LIVENTS</h2>
-                            <div>
+                            <div class="proyectos__update">
                                 <span>Ultima actualizacion: hace 5 dias</span>
                                 <span>Estado: Publico</span>
                             </div>
                             <p>
                                 Una aplicación de transmisión de video con geolocalización en vivo, para transmitir eventos.
                             </p>
-                            <div>
-                                <button>Ver en vivo</button>
-                                <button>Github Repo</button>
+                            <div class="proyectos__buttons">
+                                <button class="live-btn">Ver en vivo</button>
+                                <button class="github-btn">Github Repo</button>
                             </div>
                         </div>
                     </div>
                     <!-- FIN CARD 2 -->
                     <!-- CARD 3 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Img del proyecto" />
-                        </div>
+                    <div class="cards">
+                        <img src="public/img/moove2.png" alt="Img del proyecto" />
                         <div>
                             <h2>MOOVE</h2>
-                            <div>
+                            <div class="proyectos__update">
                                 <span>Ultima actualizacion: hace 5 dias</span>
                                 <span>Estado: Publico</span>
                             </div>
                             <p>
                                 Aplicación móvil para reservar recogida y devolución instantánea en las principales ciudades.
                             </p>
-                            <div>
-                                <button>Ver en vivo</button>
-                                <button>Github Repo</button>
+                            <div class="proyectos__buttons">
+                                <button class="live-btn">Ver en vivo</button>
+                                <button class="github-btn">Github Repo</button>
                             </div>
                         </div>
                     </div>
                     <!-- FIN CARD 3 -->
                 </div>
-                <div>
-                    <button>Ver mas en Github</button>
+                <div class="mas__proyectos">
+                    <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank">Ver mas en Github
+              <ion-icon name="logo-github" class="icon__proyetos"></ion-icon
+            ></a>
                 </div>
             </div>
         </section>
         <section id="contactame">
             <div>
+                <h2>Contactate conmigo:</h2>
+                <h3 class="contactame__title">¿Satisfecho conmigo?</h3>
+                <h3 class="contactame__subtitle">
+                    Por favor póngase en contacto conmigo
+                </h3>
                 <div>
-                    <h2>Contactate conmigo:</h2>
-                    <h3>¿Satisfecho conmigo?</h3>
-                    <h3>Por favor póngase en contacto conmigo</h3>
-                    <div>
-                        <img src="" alt="RRSS Email" />
-                        <img src="" alt="RRSS Github" />
-                        <img src="" alt="RRSS Linkedin" />
+                    <a href="mailto:hola@fabriziodev.ar"><img src="public/img/email.png" alt="RRSS Email" /></a>
+                    <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank"><img src="public/img/github.png" alt="RRSS Github" /></a>
+                    <a href="https://www.linkedin.com/in/fabrizio-ferroni/"><img src="public/img/linkedin.png" alt="RRSS Linkedin" /></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="contactame__form__title">
+                    Contáctame, hagamos magia juntos
+                </h3>
+                <form action="/" method="POST">
+                    <div class="fake_placeholder">
+                        <label>
+                            <span>Nombre:</span>
+                            <input type="text" name="nombre" autocapitalize="words" autocomplete="off"/>
+                        </label>
                     </div>
-                </div>
-                <div>
-                    <h3>Contáctame, hagamos magia juntos</h3>
-                    <form action="/" method="POST">
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" autocapitalize="words" autocomplete="off" />
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" autocapitalize="words" autocomplete="off" />
-                        </div>
-                        <div>
-                            <label for="asunto">Asunto:</label>
-                            <input type="text" name="asunto" autocapitalize="words" autocomplete="off" />
-                        </div>
-                        <div>
-                            <label for="mensaje">Mensaje:</label>
+                    <div class="fake_placeholder">
+                        <label>
+                            <span>Email:</span>
+                            <input type="email" name="email" autocapitalize="words" autocomplete="off"/>
+                        </label>
+                    </div>
+                    <div class="fake_placeholder">
+                        <label>
+                            <span >Asunto:</span>
+                            <!-- <input type="text" name="asunto" autocapitalize="words" autocomplete="off" /> -->
+                            <select class="select-pd" name="asunto" id="">
+                                <option class="hidden" value="" selected disabled>Seleccione una opción</option>
+                                <option value="prueba">Prueba</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="fake_placeholder">
+                        <label>
+                            <span class="textarea">Mensaje:</span>
                             <textarea name="mensaje" id="" cols="20" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="button">Enviar <ion-icon name="send" class="contactame__icon"></ion-icon></button>
+                    </div>
+                </form>
             </div>
         </section>
     </div>
@@ -310,6 +324,9 @@
         </div>
     </footer>
     <!-- Inicializacion de scripts js -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="public/js/main.js"></script>
 </body>
 
