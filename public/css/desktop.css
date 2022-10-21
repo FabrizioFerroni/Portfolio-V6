@@ -5,12 +5,37 @@
     --white: #ffffff;
     --light-color: #f5f5f5;
     --low-priority: #918181;
-    --primary-color: rgba(195, 39, 41, 1);
+    --primary-color: #c42729;
     --secondary-color: #db3739;
     --dark-color: #360000;
     --cards: rgba(189, 189, 189, 0.45);
     --card-proyectos: #3D0404;
     --form-input: #301B1B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.desktop {
+    display: block;
+}
+
+.movil {
+    display: none;
+}
+
+.outnone {
+    outline: none !important;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+
+/* SWEETALERT2 */
+
+.swal2-title,
+.swal2-html-container {
+    color: var(--light-color) !important;
 }
 
 
@@ -94,7 +119,7 @@ li {
 nav {
     background-color: var(--dark-color);
     display: flex;
-    padding: 19px 300px;
+    padding: 19px 136px;
     /* padding: 19px 160px 19px 160px; */
     align-items: center;
     justify-content: space-between;
@@ -147,7 +172,7 @@ nav .nav__menu ul li a img {
 }
 
 .container {
-    padding: 90px 300px;
+    padding: 90px 136px;
 }
 
 #inicio {
@@ -347,7 +372,8 @@ nav .nav__menu ul li a img {
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    gap: 45px;
+    gap: 35px;
+    /* gap: 45px; */
 }
 
 #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
@@ -465,6 +491,15 @@ nav .nav__menu ul li a img {
     padding-left: 16px;
     padding-bottom: 16px;
     color: var(--low-priority);
+}
+
+#proyectos .proyectos__cards .cards .proyectos__update .privado {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+#proyectos .proyectos__cards .cards .proyectos__update .publico {
+    color: green;
 }
 
 #proyectos .proyectos__cards .cards .proyectos__buttons {
@@ -611,7 +646,8 @@ nav .nav__menu ul li a img {
 }
 
 #contactame a .icon__rrss:hover {
-    color: var(--white);
+    color: var(--secondary-color);
+    transform: rotateY(180deg);
 }
 
 #contactame a {
@@ -741,6 +777,56 @@ nav .nav__menu ul li a img {
     padding-top: 37px;
 }
 
+#contactame form input:-webkit-autofill,
+#contactame form input:-webkit-autofill:hover,
+#contactame form input:-webkit-autofill:focus,
+#contactame form input:-webkit-autofill,
+#contactame form input:-webkit-autofill:hover,
+#contactame form input:-webkit-autofill:focus,
+#contactame form input:-webkit-autofill,
+#contactame form input:-webkit-autofill:hover,
+#contactame form input:-webkit-autofill:focus {
+    border: 1px solid var(--form-input);
+    -webkit-text-fill-color: var(--white);
+    transition: background-color 100000s ease-in-out 0s;
+}
+
+#contactame form textarea:-webkit-autofill,
+#contactame form textarea:-webkit-autofill:hover,
+#contactame form textarea:-webkit-autofill:focus,
+#contactame form textarea:-webkit-autofill,
+#contactame form textarea:-webkit-autofill:hover,
+#contactame form textarea:-webkit-autofill:focus,
+#contactame form textarea:-webkit-autofill,
+#contactame form textarea:-webkit-autofill:hover,
+#contactame form textarea:-webkit-autofill:focus {
+    border: 1px solid var(--form-input);
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
+    transition: background-color 100000s ease-in-out 0s;
+}
+
+#contactame form select:-webkit-autofill,
+#contactame form select:-webkit-autofill:hover,
+#contactame form select:-webkit-autofill:focus,
+#contactame form select:-webkit-autofill,
+#contactame form select:-webkit-autofill:hover,
+#contactame form select:-webkit-autofill:focus,
+#contactame form select:-webkit-autofill,
+#contactame form select:-webkit-autofill:hover,
+#contactame form select:-webkit-autofill:focus {
+    color: var(--white);
+    border: 1px solid var(--form-input);
+    -webkit-text-fill-color: var(--white);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 50%;
+}
+
 #contactame form button {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -830,17 +916,134 @@ footer .icon__footer {
 }
 
 footer .icon__footer:hover {
-    color: var(--white);
+    color: var(--secondary-color);
+    transform: rotateY(180deg);
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1920px) {
+    /* @media (min-width: 1400px) and (max-width: 1920px) { */
     .container {
-        padding: 90px 136px;
+        padding: 90px 300px;
     }
     nav {
-        padding: 19px 136px;
+        padding: 19px 300px;
     }
     #quien-soy .quien-soy__services .quien-soy__cards__services {
         gap: 35px;
     }
+    #proyectos .proyectos__cards {
+        justify-content: space-around;
+        gap: 0px;
+    }
+    #proyectos .proyectos__cards .cards {
+        width: 350px;
+    }
+    footer {
+        padding: 19px 300px;
+    }
+}
+
+@media (min-width: 1536px) and (max-width: 1919px) {
+    /* @media (min-width: 1400px) and (max-width: 1920px) and (orientation: landscape) { */
+    /* @media (min-width: 1400px) and (max-width: 1920px) and (orientation: landscape) { */
+    .container {
+        padding: 90px 200px;
+    }
+    nav {
+        padding: 19px 200px;
+    }
+    /* #quien-soy .quien-soy__services .quien-soy__cards__services {
+         gap: 35px; 
+    } 
+    */
+    #proyectos .proyectos__cards {
+        justify-content: space-around;
+        gap: 0px;
+    }
+    #proyectos .proyectos__cards .cards {
+        width: 350px;
+    }
+    footer {
+        padding: 19px 200px;
+    }
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+    #quien-soy .quien-soy__services .quien-soy__cards__services {
+        gap: 35px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+        width: 310px;
+        height: 310px;
+    }
+    #proyectos .proyectos__cards {
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+    #proyectos .proyectos__cards .cards {
+        width: 350px;
+    }
+    /* #proyectos .proyectos__cards .cards:last-child {
+        display: none;
+    } */
+}
+
+@media (max-width: 1366px) {
+    #quien-soy .quien-soy__cards .cards {
+        height: 280px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services {
+        gap: 35px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+        width: 310px;
+        height: 310px;
+    }
+    #proyectos .proyectos__cards {
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+    #proyectos .proyectos__cards .cards {
+        width: 350px;
+    }
+    /* #proyectos .proyectos__cards .cards:last-child {
+        display: none;
+    } */
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    margin-top: 45px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    color: var(--primary-color);
+}
+
+.swiper-pagination {
+    position: relative !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0 !important;
 }

@@ -5,6 +5,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metas -->
+    <meta name="robots" content="follow, index" />
+    <meta name="description" content="Estudiante de programacion sobre desarrollo web - Cisco CCNA - Fullstack Angular con Spring boot" />
+    <meta property="og:url" content="https://fabriziodev.ar/v6" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fabrizio Developer" />
+    <meta property="og:description" content="Estudiante de programacion sobre desarrollo web - Cisco CCNA - Fullstack Angular con Spring boot" />
+    <meta property="og:title" content="Fabrizio Developer" />
+    <meta property="og:image" content="assets/img/yo.png" />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fabrizio Developer" />
+    <meta name="twitter:description" content="Estudiante de programacion sobre desarrollo web - Cisco CCNA - Fullstack Angular con Spring boot" />
+    <meta name="twitter:image" content="assets/img/yo.png" />
+    <meta name="twitter:site" content="@fabriiferroni" />
+    <meta name="twitter:creator" content="@fabriiferroni" />
+    <link rel="shortcut icon" href="assets/img/faviconff.ico" type="image/x-icon">
     <title>Fabrizio Developer</title>
     <!-- Fuente de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,13 +31,15 @@
     <!-- CSS para dispositivos desktop -->
     <link rel="stylesheet" href="public/css/desktop.css" />
     <!-- CSS para dispositivos moviles -->
-    <link rel="stylesheet" media="( max-width: 767px )" href="public/css/movil.css" />
+    <link rel="stylesheet" media="( max-width: 768px )" href="public/css/movil.css" />
     <!-- favicon para la pestaña -->
     <link rel="shortcut icon" href="public/img/faviconff.ico" type="image/x-icon" />
+    <!-- Swipper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="desktop">
         <!-- Menu principal -->
         <nav>
             <div class="nav__title">
@@ -61,7 +80,63 @@
             </div>
         </nav>
     </header>
+
+    <header id="header" class="movil">
+        <!-- Menu principal -->
+        <nav>
+            <div class="nav__title">
+                <a href="/">
+                    <h3>Fabrizio Developer</h3>
+                </a>
+            </div>
+
+            <div class="nav__menu__icons">
+                <a class="" href="javascript:void(0);" id="open__menu">
+                    <ion-icon name="grid"></ion-icon>
+                </a>
+                <a href="javascript:void(0);"><img src="public/img/en.png" alt="Cambiar a ingles" /></a>
+            </div>
+        </nav>
+        <div class="nav__menu" id="menu__movil" style="display: none">
+            <!-- <div> -->
+            <ul class="nav__navbar">
+                <li>
+                    <a href="javascript:void(0);" class="cerrar" id="close__menu">
+                        <ion-icon name="close"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__links" href="/" id="home">
+                        <ion-icon class="icon__menu" name="home"></ion-icon>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__links" href="#quien-soy" id="quien__soy">
+                        <ion-icon class="icon__menu" name="person"></ion-icon>
+                        Quien soy
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__links" href="#proyectos" id="proyecto">
+                        <ion-icon class="icon__menu" name="code-working"></ion-icon>
+                        Mis proyectos
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__links" href="#contactame" id="contacto">
+                        <ion-icon class="icon__menu" name="arrow-redo"></ion-icon>
+                        Contactame
+                    </a>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </div>
+    </header>
+
+
     <div class="container">
+
         <section id="inicio" class="page-section">
             <div>
                 <h3>Hola, soy</h3>
@@ -98,34 +173,36 @@
                 <div class="quien-soy__years">
                     <h1>1+</h1>
                     <h2>
-                        Años de experiencia. Especializados en la creación de aplicaciones, al tiempo que garantizan una perfecta experiencia web para usuarios finales.
+                        Año(s) de experiencia. Especializados en la creación de aplicaciones, al tiempo que garantizan una perfecta experiencia web para usuarios finales.
                     </h2>
                 </div>
-                <div class="quien-soy__cards">
-                    <!-- CARD 1 -->
-                    <div class="cards">
-                        <img src="public/img/ux-1.png" title="ux" alt="Logo servicio" />
-                        <h3>UI & UX DESINGINING</h3>
+                <div class="quien__soy__movil">
+                    <div class="quien-soy__cards">
+                        <!-- CARD 1 -->
+                        <div class="cards">
+                            <img src="public/img/ux-1.png" title="ux" alt="Logo servicio" />
+                            <h3>UI & UX DESINGINING</h3>
+                        </div>
+                        <!-- FIN CARD 1 -->
+                        <!-- CARD 2 -->
+                        <div class="cards">
+                            <img src="public/img/web-programming-1.png" alt="Logo servicio" />
+                            <h3>WEB DEVELOPMENT</h3>
+                        </div>
+                        <!-- FIN CARD 2 -->
+                        <!-- CARD 3 -->
+                        <div class="cards">
+                            <img src="public/img/app-development.png" alt="Logo servicio" />
+                            <h3>MOBILE DEVELOPMENT</h3>
+                        </div>
+                        <!-- FIN CARD 3 -->
+                        <!-- CARD 4 -->
+                        <div class="cards">
+                            <img src="public/img/web-scraping-1.png" alt="Logo servicio" />
+                            <h3>WEB SCRAPING WITH PHYTON</h3>
+                        </div>
+                        <!-- FIN CARD 4 -->
                     </div>
-                    <!-- FIN CARD 1 -->
-                    <!-- CARD 2 -->
-                    <div class="cards">
-                        <img src="public/img/web-programming-1.png" alt="Logo servicio" />
-                        <h3>WEB DEVELOPMENT</h3>
-                    </div>
-                    <!-- FIN CARD 2 -->
-                    <!-- CARD 3 -->
-                    <div class="cards">
-                        <img src="public/img/app-development.png" alt="Logo servicio" />
-                        <h3>MOBILE DEVELOPMENT</h3>
-                    </div>
-                    <!-- FIN CARD 3 -->
-                    <!-- CARD 4 -->
-                    <div class="cards">
-                        <img src="public/img/web-scraping-1.png" alt="Logo servicio" />
-                        <h3>WEB SCRAPING WITH PHYTON</h3>
-                    </div>
-                    <!-- FIN CARD 4 -->
                 </div>
                 <div class="quien-soy__services">
                     <h2 class="h2__title">Los servicios que ofrezco:</h2>
@@ -142,7 +219,7 @@
                             <img src="public/img/web.png" alt="Logo servicio" />
                             <h2>DESARROLLO WEB</h2>
                             <p>
-                                Creo hermosas interfaces con HTML, CSS y JavaScript simples y también marcos como Angular y ReactJS
+                                Creo hermosas interfaces con HTML, CSS y JavaScript simples y también marcos como Angular.
                             </p>
                         </div>
                         <!-- FIN CARD 2 -->
@@ -194,65 +271,83 @@
                         He trabajado en muchos proyectos a lo largo de mi carrera como desarrollador web. Estos son algunos de mis proyectos del mundo real.
                     </p>
                 </div>
+                <!-- SWIPER JS -->
+                <!-- Slider main container -->
                 <div class="proyectos__cards">
-                    <!-- CARD 1 -->
-                    <div class="cards">
-                        <img src="public/img/twinder.png" alt="Img del proyecto" />
-                        <div>
-                            <h2>TWINDER</h2>
-                            <div class="proyectos__update">
-                                <span>Ultima actualizacion: hace 5 dias</span>
-                                <span>Estado: Publico</span>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <!-- CARD 1 -->
+                            <div class="swiper-slide">
+                                <div class="cards">
+                                    <img src="public/img/twinder.png" alt="Img del proyecto" />
+                                    <div>
+                                        <h2>TWINDER</h2>
+                                        <div class="proyectos__update">
+                                            <span>Ultima actualizacion: hace 5 dias</span>
+                                            <span>Estado: <span class="publico">Publico</span></span>
+                                        </div>
+                                        <p>
+                                            Una aplicación de geolocalización en vivo para encontrar tweets y usuarios de Twitter a tu alrededor.
+                                        </p>
+                                        <div class="proyectos__buttons">
+                                            <a href="javascript:void(0);" target="_blank" class="live-btn">Ver en vivo <ion-icon class="icon__proyectos__btn" name="eye"></ion-icon></a>
+                                            <a href="javascript:void(0);" target="_blank" class="github-btn">Github Repo <ion-icon class="icon__proyectos__btn" class="icon__footer" name="logo-github"></ion-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p>
-                                Una aplicación de geolocalización en vivo para encontrar tweets y usuarios de Twitter a tu alrededor.
-                            </p>
-                            <div class="proyectos__buttons">
-                                <a href="javascript:void(0);" target="_blank" class="live-btn">Ver en vivo <ion-icon class="icon__proyectos__btn" name="eye"></ion-icon></a>
-                                <a href="javascript:void(0);" target="_blank" class="github-btn">Github Repo <ion-icon class="icon__proyectos__btn" class="icon__footer" name="logo-github"></ion-icon></a>
+                            <!-- FIN CARD 1 -->
+                            <!-- CARD 2 -->
+                            <div class="swiper-slide">
+                                <div class="cards">
+                                    <img src="public/img/livents2.png" style="opacity: 40%" alt="Img del proyecto" />
+                                    <div>
+                                        <h2>LIVENTS</h2>
+                                        <div class="proyectos__update">
+                                            <span>Ultima actualizacion: hace 5 dias</span>
+                                            <span>Estado: <span class="privado">Privado</span></span>
+                                        </div>
+                                        <p>
+                                            Una aplicación de transmisión de video con geolocalización en vivo, para transmitir eventos.
+                                        </p>
+                                        <div class="proyectos__buttons">
+                                            <a href="javascript:void(0);" target="_blank" class="live-btn">Ver en vivo <ion-icon class="icon__proyectos__btn" name="eye"></ion-icon></a>
+                                            <a href="javascript:void(0);" target="_blank" class="github-btn disabled">Github Repo <ion-icon class="icon__proyectos__btn" class="icon__footer" name="logo-github"></ion-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- FIN CARD 2 -->
+                            <!-- CARD 3 -->
+                            <div class="swiper-slide">
+                                <div class="cards">
+                                    <img src="public/img/moove2.png" alt="Img del proyecto" />
+                                    <div>
+                                        <h2>MOOVE</h2>
+                                        <div class="proyectos__update">
+                                            <span>Ultima actualizacion: hace 5 dias</span>
+                                            <span>Estado: <span class="publico">Publico</span></span>
+                                        </div>
+                                        <p>
+                                            Aplicación móvil para reservar recogida y devolución instantánea en las principales ciudades.
+                                        </p>
+                                        <div class="proyectos__buttons">
+                                            <a href="javascript:void(0);" target="_blank" class="live-btn">Ver en vivo <ion-icon class="icon__proyectos__btn" name="eye"></ion-icon></a>
+                                            <a href="javascript:void(0);" target="_blank" class="github-btn">Github Repo <ion-icon class="icon__proyectos__btn" class="icon__footer" name="logo-github"></ion-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN CARD 3 -->
                         </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <!-- FIN CARD 1 -->
-                    <!-- CARD 2 -->
-                    <div class="cards">
-                        <img src="public/img/livents2.png" style="opacity: 40%" alt="Img del proyecto" />
-                        <div>
-                            <h2>LIVENTS</h2>
-                            <div class="proyectos__update">
-                                <span>Ultima actualizacion: hace 5 dias</span>
-                                <span>Estado: Publico</span>
-                            </div>
-                            <p>
-                                Una aplicación de transmisión de video con geolocalización en vivo, para transmitir eventos.
-                            </p>
-                            <div class="proyectos__buttons">
-                                <a href="javascript:void(0);" target="_blank" class="live-btn">Ver en vivo <ion-icon class="icon__proyectos__btn" name="eye"></ion-icon></a>
-                                <a href="javascript:void(0);" target="_blank" class="github-btn">Github Repo <ion-icon class="icon__proyectos__btn" class="icon__footer" name="logo-github"></ion-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FIN CARD 2 -->
-                    <!-- CARD 3 -->
-                    <div class="cards">
-                        <img src="public/img/moove2.png" alt="Img del proyecto" />
-                        <div>
-                            <h2>MOOVE</h2>
-                            <div class="proyectos__update">
-                                <span>Ultima actualizacion: hace 5 dias</span>
-                                <span>Estado: Publico</span>
-                            </div>
-                            <p>
-                                Aplicación móvil para reservar recogida y devolución instantánea en las principales ciudades.
-                            </p>
-                            <div class="proyectos__buttons">
-                                <a href="javascript:void(0);" target="_blank" class="live-btn">Ver en vivo <ion-icon class="icon__proyectos__btn" name="eye"></ion-icon></a>
-                                <a href="javascript:void(0);" target="_blank" class="github-btn">Github Repo <ion-icon class="icon__proyectos__btn" class="icon__footer" name="logo-github"></ion-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FIN CARD 3 -->
+
                 </div>
+
                 <div class="mas__proyectos">
                     <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank">Ver mas en Github
               <ion-icon name="logo-github" class="icon__proyetos"></ion-icon
@@ -284,24 +379,30 @@
                 <h3 class="contactame__form__title">
                     Contáctame, hagamos magia juntos
                 </h3>
-                <form action="/" method="POST">
+                <form action="/" method="POST" id="form">
                     <div class="fake_placeholder">
                         <label>
                             <span>Nombre:</span>
-                            <input type="text" class="input__pl" name="nombre" autocapitalize="words" autocomplete="off" placeholder="Ingrese su nombre y apellido"/>
+                            <input type="text" id="frm__nombre" class="input__pl" name="nombre" autocapitalize="words" autocomplete="off" placeholder="Ingrese su nombre y apellido"/>
                         </label>
                     </div>
                     <div class="fake_placeholder">
                         <label>
                             <span>Email:</span>
-                            <input type="email" class="input__pl" name="email" autocapitalize="words" autocomplete="off" placeholder="Ingrese su email"/>
+                            <input type="email" id="frm__email" class="input__pl" name="email" autocapitalize="words" autocomplete="off" placeholder="Ingrese su email"/>
+                        </label>
+                    </div>
+                    <div class="fake_placeholder">
+                        <label>
+                            <span>Telefono:</span>
+                            <input type="tel"  onkeypress='return validaNumericos(event)' maxlength="20" id="frm__telefono" class="input__pl" name="telefono" autocapitalize="words" autocomplete="off" min="0" placeholder="Ingrese su número de telefono"/>
                         </label>
                     </div>
                     <div class="fake_placeholder">
                         <label>
                             <span >Asunto:</span>
                             <!-- <input type="text" name="asunto" autocapitalize="words" autocomplete="off" /> -->
-                            <select class="select-pd" name="asunto" id="test__select">
+                            <select class="select-pd" id="frm__asunto" name="asunto" id="test__select">
                                 <option class="hidden" value="" selected disabled>Seleccione una opción</option>
                                 <option value="prueba">Prueba</option>
                             </select>
@@ -310,11 +411,11 @@
                     <div class="fake_placeholder">
                         <label>
                             <span class="textarea">Mensaje:</span>
-                            <textarea name="mensaje" class="textarea__pl" id="" cols="20" rows="10" placeholder="Ingrese su mensaje"></textarea>
+                            <textarea name="mensaje" class="textarea__pl" id="frm__mensaje" cols="20" rows="10" placeholder="Ingrese su mensaje"></textarea>
                         </label>
                     </div>
                     <div>
-                        <button type="button">Enviar <ion-icon name="send" class="contactame__icon"></ion-icon></button>
+                        <button class="outnone" type="submit">Enviar <ion-icon name="send" class="contactame__icon"></ion-icon></button>
                     </div>
                 </form>
             </div>
@@ -344,12 +445,15 @@
     <!-- Inicializacion de scripts js -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <!-- jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+    <!-- Sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
     <script src="public/js/main.js"></script>
 </body>
