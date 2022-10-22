@@ -270,6 +270,7 @@ nav .nav__menu ul li a img {
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
+    hyphens: auto;
     text-align: justify;
 }
 
@@ -468,10 +469,10 @@ nav .nav__menu ul li a img {
 }
 
 #proyectos .proyectos__cards .cards p {
-    font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+    font-style: normal;
+    font-weight: 500;
     padding-left: 17px;
     padding-right: 17px;
     text-align: justify;
@@ -640,9 +641,9 @@ nav .nav__menu ul li a img {
 
 #contactame a .icon__rrss {
     padding-top: 6px;
+    color: var(--primary-color);
     width: 32px;
     height: 32px;
-    color: var(--primary-color);
 }
 
 #contactame a .icon__rrss:hover {
@@ -1009,6 +1010,25 @@ footer .icon__footer:hover {
     /* #proyectos .proyectos__cards .cards:last-child {
         display: none;
     } */
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    nav,
+    .container,
+    footer {
+        padding: 19px 30px;
+    }
+    #quien-soy .quien-soy__cards .cards {
+        height: 340px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services {
+        gap: 25px;
+        justify-content: space-evenly;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .swiper-slide {

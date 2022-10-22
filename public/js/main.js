@@ -1,8 +1,3 @@
-if (window.matchMedia("(max-width: 768px)")) {
-    const script = document.createElement('script');
-    script.src = "public/js/movil.js";
-    document.body.appendChild(script);
-}
 const inputs = document.querySelectorAll('.fake_placeholder input');
 const textarea = document.querySelectorAll('.fake_placeholder textarea');
 const select = document.querySelectorAll('.fake_placeholder select');
@@ -187,7 +182,7 @@ function validaNumericos(event) {
     return event.charCode >= 48 && event.charCode <= 57;
 }
 
-
+// Menú active desktop
 const btns =
     $("#header .nav__navbar .nav__links");
 
@@ -221,3 +216,74 @@ $(window).scroll(function() {
         }
     });
 }).scroll();
+
+// Movil 
+const open__menu = document.getElementById("open__menu");
+const close__menu = document.getElementById("close__menu");
+const menu__movil = document.getElementById("menu__movil");
+const home = document.getElementById("home");
+const quien__soy = document.getElementById("quien__soy");
+const proyecto = document.getElementById("proyecto");
+const contacto = document.getElementById("contacto");
+
+
+open__menu.addEventListener("click", function() {
+    open__menu.classList.add("active");
+    menu__movil.style.display = 'block';
+});
+
+close__menu.addEventListener("click", function() {
+    open__menu.classList.remove("active");
+    menu__movil.style.display = 'none';
+});
+
+quien__soy.addEventListener("click", function() {
+    open__menu.classList.remove("active");
+    menu__movil.style.display = 'none';
+})
+
+proyecto.addEventListener("click", function() {
+    open__menu.classList.remove("active");
+    menu__movil.style.display = 'none';
+})
+
+contacto.addEventListener("click", function() {
+    open__menu.classList.remove("active");
+    menu__movil.style.display = 'none';
+});
+
+const cambiar__idioma = document.getElementById("cambiar__idioma");
+
+cambiar__idioma.addEventListener("click", () => {
+    const flag__lang = document.getElementById("flag__lang");
+    var data__flag = flag__lang.dataset.flag;
+    flag__lang.src = "public/img/flags/arg.png";
+    flag__lang.alt = "Cambiar a español";
+    flag__lang.title = "Cambiar a español";
+    flag__lang.dataset.flag = 'arg';
+
+    if (data__flag == "arg") {
+        flag__lang.src = "public/img/flags/usa.png";
+        flag__lang.alt = "Cambiar a inglés";
+        flag__lang.title = "Cambiar a inglés";
+        flag__lang.dataset.flag = 'usa';
+    }
+});
+
+const cambiar__idioma__movil = document.getElementById("cambiar__idioma__movil");
+
+cambiar__idioma__movil.addEventListener("click", () => {
+    const flag__lang__movil = document.getElementById("flag__lang__movil");
+    var data__flag__movil = flag__lang__movil.dataset.lang;
+    flag__lang__movil.src = "public/img/flags/arg.png";
+    flag__lang__movil.alt = "Cambiar a español";
+    flag__lang__movil.title = "Cambiar a español";
+    flag__lang__movil.dataset.lang = 'arg';
+
+    if (data__flag__movil == "arg") {
+        flag__lang__movil.src = "public/img/flags/usa.png";
+        flag__lang__movil.alt = "Cambiar a inglés";
+        flag__lang__movil.title = "Cambiar a inglés";
+        flag__lang__movil.dataset.lang = 'usa';
+    }
+});

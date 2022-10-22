@@ -29,7 +29,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap" rel="stylesheet" />
     <!-- Declaramos los estilos css puros -->
     <!-- CSS para dispositivos desktop -->
-    <link rel="stylesheet" href="public/css/desktop.css" />
+    <link rel="stylesheet" media="( min-width: 768px )" href="public/css/desktop.css" />
+    <!-- <link rel="stylesheet" href="public/css/desktop.css" /> -->
     <!-- CSS para dispositivos moviles -->
     <link rel="stylesheet" media="( max-width: 768px )" href="public/css/movil.css" />
     <!-- favicon para la pestaña -->
@@ -74,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);"><img src="public/img/en.png" alt="Cambiar a ingles" /></a>
+                        <a href="javascript:void(0);" id="cambiar__idioma"><img id="flag__lang" data-flag="usa" title="Cambiar a inglés" src="public/img/flags/usa.png" alt="Cambiar a ingles" /></a>
                     </li>
                 </ul>
             </div>
@@ -94,7 +95,7 @@
                 <a class="" href="javascript:void(0);" id="open__menu">
                     <ion-icon name="grid"></ion-icon>
                 </a>
-                <a href="javascript:void(0);"><img src="public/img/en.png" alt="Cambiar a ingles" /></a>
+                <a href="javascript:void(0);" id="cambiar__idioma__movil"><img id="flag__lang__movil" data-lang="usa" title="Cambiar a inglés" src="public/img/flags/usa.png" alt="Cambiar a ingles" /></a>
             </div>
         </nav>
         <div class="nav__menu" id="menu__movil" style="display: none">
