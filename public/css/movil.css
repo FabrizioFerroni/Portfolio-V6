@@ -60,6 +60,36 @@
     .swiper-pagination-fraction {
         bottom: 0 !important;
     }
+    /*Flecha para hacer la pagina hacia arriba*/
+    
+    .ir-arriba {
+        display: none;
+        background-repeat: no-repeat;
+        font-size: 25px;
+        border-radius: 8px;
+        background-color: var(--primary-color);
+        cursor: pointer;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 8px;
+    }
+    
+    .ir-arriba:hover,
+    .ir-arriba:focus {
+        background-color: var(--secondary-color);
+    }
+    
+    .fa-stack {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
     /* SWEETALERT2 */
     
     .swal2-title,
@@ -985,3 +1015,146 @@
         color: var(--secondary-color);
         transform: rotateY(180deg);
     }
+    /* old Smartphones (portrait and landscape) ----------- */
+    
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* Styles */
+    }
+    /* old Smartphones (landscape) ----------- */
+    
+    @media only screen and (min-width: 321px) {
+        /* Styles */
+    }
+    /* old Smartphones (portrait) ----------- */
+    
+    @media only screen and (max-width: 320px) {
+        /* Styles */
+    }
+    /* iPhone 4 ----------- */
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        /* Styles */
+    }
+    /* iPads (portrait and landscape) ----------- */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* Styles */
+    }
+    /* iPads (landscape) ----------- */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Styles */
+    }
+    /* iPads (portrait) ----------- */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* Styles */
+    }
+    /* Android Tablet (portrait and landscape) ----------- */
+    
+    @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+        /* Styles */
+    }
+    /* Android Tablet (landscape) ----------- */
+    
+    @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: landscape) {
+        /* Styles */
+    }
+    /* Android Tablet (portrait) ----------- */
+    
+    @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
+        /* Styles */
+    }
+    /* Desire + Galaxy S2 (portrait and landscape) ----------- */
+    
+    @media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+        /* Styles */
+    }
+    /* Desire + Galaxy S2 (landscape) ----------- */
+    
+    @media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (orientation: landscape) {
+        /* Styles */
+        #quien-soy .quien-soy__cards {
+            display: grid;
+            margin-top: 19px;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            grid-template-columns: 50% 50%;
+            gap: 20px;
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services {
+            margin-top: 32px;
+            display: grid;
+            align-content: center;
+            align-items: center;
+            gap: 20px;
+            grid-template-columns: 50% 45%;
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
+            border: 3px solid var(--white);
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) h2 {
+            color: var(--primary-color);
+        }
+        #proyectos .proyectos__cards .cards {
+            width: 60%;
+        }
+        #proyectos .proyectos__cards .cards .proyectos__buttons {
+            justify-content: space-around;
+        }
+    }
+    /* Desire + Galaxy S2 (portrait) ----------- */
+    
+    @media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (orientation: portrait) {
+        /* Styles */
+    }
+    /* ipad Mini Portrait */
+    
+    @media only screen and (width:768px) and (orientation: portrait) {
+        #quien-soy .quien-soy__cards {
+            display: grid;
+            margin-top: 19px;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            grid-template-columns: 45% 55%;
+            gap: 20px;
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services {
+            margin-top: 32px;
+            display: grid;
+            align-content: center;
+            align-items: center;
+            gap: 20px;
+            grid-template-columns: 50% 45%;
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
+            border: 3px solid var(--white);
+        }
+        #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) h2 {
+            color: var(--primary-color);
+        }
+        #proyectos .proyectos__cards .cards {
+            width: 60%;
+        }
+        #proyectos .proyectos__cards .cards .proyectos__buttons {
+            justify-content: space-around;
+        }
+    }
+    /* ipad Mini Landscape */
+    
+    @media only screen and (width:1024px) and (resolution: 163dpi) {}

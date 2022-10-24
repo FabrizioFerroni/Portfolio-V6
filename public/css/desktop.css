@@ -30,6 +30,75 @@ html {
     box-shadow: 0 0 0 0 transparent !important;
 }
 
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    margin-top: 45px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    color: var(--primary-color);
+}
+
+.swiper-pagination {
+    position: relative !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0 !important;
+}
+
+
+/*Flecha para hacer la pagina hacia arriba*/
+
+.ir-arriba {
+    display: none;
+    background-repeat: no-repeat;
+    font-size: 25px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 8px;
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+    background-color: var(--secondary-color);
+}
+
+.fa-stack {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
 
 /* SWEETALERT2 */
 
@@ -181,7 +250,8 @@ nav .nav__menu ul li a img {
     /* justify-content: center; */
     align-items: center;
     /* margin-bottom: 128px; */
-    padding-top: 107px;
+    /* padding-top: 107px; */
+    padding-top: 60px;
 }
 
 #inicio h3 {
@@ -1019,7 +1089,11 @@ footer .icon__footer:hover {
         padding: 19px 30px;
     }
     #quien-soy .quien-soy__cards .cards {
-        height: 340px;
+        height: auto;
+        /* height: 340px; */
+    }
+    #quien-soy .quien-soy__cards .cards:last-child {
+        margin-right: 16px;
     }
     #quien-soy .quien-soy__services .quien-soy__cards__services {
         gap: 25px;
@@ -1029,41 +1103,197 @@ footer .icon__footer:hover {
         width: 300px;
         height: 300px;
     }
+    #quien-soy .quien-soy__cards {
+        display: grid;
+        margin-top: 19px;
+        /* align-items: center; */
+        justify-content: center;
+        grid-template-columns: 33% 25%;
+        /* grid-template-rows: 1fr 1fr; */
+        justify-items: center;
+        row-gap: 20px;
+        align-content: center;
+        /* margin-right: 397px; */
+    }
 }
 
-.swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+@media (min-width: 877px) and (max-width: 1023px) {
+    nav {
+        padding: 19px 40px;
+    }
+    .container {
+        padding: 19px 40px;
+    }
+    footer {
+        padding: 19px 40px;
+    }
+    nav .nav__title h3 {
+        font-size: 20px;
+    }
+    nav .nav__menu ul li a {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #inicio img {
+        width: 100%;
+    }
+    #inicio .btn-quien-soy {
+        margin-right: 10px;
+        height: auto;
+    }
+    #quien-soy .quien-soy__cards {
+        display: grid;
+        margin-top: 19px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: 30% 30%;
+        gap: 20px;
+    }
+    #quien-soy .quien-soy__cards .cards {
+        margin-right: 0px;
+    }
+    #quien-soy .quien-soy__services .h2__title {
+        text-align: center;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services {
+        margin-top: 32px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 33% 41%;
+        row-gap: 20px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+        padding: 10px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
+        border: 3px solid var(--white);
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) h2 {
+        color: var(--primary-color);
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards h2 {
+        word-break: break-word;
+        text-align: center;
+    }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .swiper-pagination-bullet-active {
-    background-color: var(--primary-color);
-    margin-top: 45px;
+@media (max-width: 876px) {
+    nav {
+        padding: 19px 30px;
+    }
+    .container {
+        padding: 19px 30px;
+    }
+    footer {
+        padding: 19px 30px;
+        display: block;
+        text-align: center;
+    }
+    nav .nav__title h3 {
+        font-size: 15px;
+    }
+    nav .nav__menu ul li a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #inicio .btn-quien-soy {
+        margin-right: 25px;
+        height: auto;
+    }
+    #inicio img {
+        width: 100%;
+    }
+    #inicio h3 {
+        font-size: 30px;
+    }
+    #inicio h1 {
+        font-size: 45px;
+    }
+    #quien-soy .quien-soy__title {
+        font-size: 28px;
+    }
+    #quien-soy .quien-soy__descripcion {
+        font-size: 15px;
+    }
+    #quien-soy .quien-soy__years h1 {
+        font-size: 60px;
+    }
+    #quien-soy .quien-soy__years h2 {
+        font-size: 15px;
+    }
+    #quien-soy .quien-soy__cards {
+        display: grid;
+        margin-top: 19px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: 40% 33%;
+        gap: 20px;
+    }
+    #quien-soy .quien-soy__cards .cards {
+        margin-right: 0px;
+    }
+    #quien-soy .quien-soy__services .h2__title {
+        /* text-align: center; */
+        font-size: 28px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services {
+        gap: 20px 0px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
+        padding: 10px;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards h2 {
+        word-break: break-word;
+        text-align: center;
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
+        border: 3px solid var(--white);
+    }
+    #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) h2 {
+        color: var(--primary-color);
+    }
+    #proyectos .proyectos__title {
+        font-size: 28px;
+    }
+    #proyectos .proyectos__description {
+        font-size: 15px;
+    }
+    #proyectos .proyectos__cards .cards h2 {
+        font-size: 20px;
+    }
+    #proyectos .proyectos__cards .cards p {
+        font-size: 13px;
+    }
+    #contactame {
+        display: block;
+    }
+    #contactame .contactame__title {
+        padding-top: 10px;
+    }
+    #contactame .contactame__form__title {
+        padding-top: 10px;
+    }
+    footer .enlaces__footer {
+        padding-top: 15px;
+    }
 }
 
-.swiper .swiper-button-next,
-.swiper .swiper-button-prev {
-    color: var(--primary-color);
-}
-
-.swiper-pagination {
-    position: relative !important;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    bottom: 0 !important;
+@media(width:768px) and (resolution: 163dpi) and(heigth: 1024px) and (orientation: portrait) {
+    #quien-soy .quien-soy__cards {
+        display: grid;
+        margin-top: 19px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: 45% 55% !important;
+        gap: 20px;
+    }
 }

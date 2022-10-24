@@ -21,7 +21,6 @@
     <meta name="twitter:image" content="assets/img/yo.png" />
     <meta name="twitter:site" content="@fabriiferroni" />
     <meta name="twitter:creator" content="@fabriiferroni" />
-    <link rel="shortcut icon" href="assets/img/faviconff.ico" type="image/x-icon">
     <title>Fabrizio Developer</title>
     <!-- Fuente de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,17 +28,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap" rel="stylesheet" />
     <!-- Declaramos los estilos css puros -->
     <!-- CSS para dispositivos desktop -->
-    <link rel="stylesheet" media="( min-width: 768px )" href="public/css/desktop.css" />
+    <link rel="stylesheet" media="( min-width: 770px )" href="public/css/desktop.css" />
     <!-- <link rel="stylesheet" href="public/css/desktop.css" /> -->
     <!-- CSS para dispositivos moviles -->
-    <link rel="stylesheet" media="( max-width: 768px )" href="public/css/movil.css" />
+    <link rel="stylesheet" media="( max-width: 769px )" href="public/css/movil.css" />
     <!-- favicon para la pestaña -->
     <link rel="shortcut icon" href="public/img/faviconff.ico" type="image/x-icon" />
     <!-- Swipper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link href='https://cdn.jsdelivr.net/npm/@zkreations/tooltips@4/tooltips.min.css' rel='stylesheet' />
+
 </head>
 
 <body>
+
+
+
     <header id="header" class="desktop">
         <!-- Menu principal -->
         <nav>
@@ -137,7 +142,12 @@
 
 
     <div class="container">
-
+        <!-- ir al top -->
+        <a class="ir-arriba" id="irarriba" data-tts="left" aria-label="Ir Arriba">
+            <span class="fa-stack">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </span>
+        </a>
         <section id="inicio" class="page-section">
             <div>
                 <h3>Hola, soy</h3>
@@ -147,15 +157,13 @@
                 </p>
                 <div class="buttons__inicio">
                     <a href="#quien-soy" class="btn-quien-soy">
-              Quien soy
-              <ion-icon name="person"></ion-icon>
-              <!-- <span class="material-symbols-sharp"> person </span> -->
-            </a>
-                    <a href="javascript:void(0);" download="CV-Fabrizio-Ferroni.pdf" class="btn-mi-cv">
-              Mi CV
-              <ion-icon name="eye"></ion-icon>
-              <!-- <span class="material-symbols-sharp"> visibility </span> -->
-            </a>
+                        Quien soy
+                        <ion-icon name="person"></ion-icon>
+                    </a>
+                    <a href="javascript:void(0);" download="CV-Fabrizio-Ferroni.pdf" data-tts="up" aria-label="Descarga mi cv" class="btn-mi-cv">
+                        Mi CV
+                        <ion-icon name="eye"></ion-icon>
+                    </a>
                     <!-- <embed src="cv/CV-Fabrizio-Ferroni.pdf#toolbar=0" width="500" height="375"> -->
                 </div>
             </div>
@@ -206,7 +214,7 @@
                     </div>
                 </div>
                 <div class="quien-soy__services">
-                    <h2 class="h2__title">Los servicios que ofrezco:</h2>
+                    <h2 class="h2__title">Los servicios que ofrezco</h2>
                     <div class="quien-soy__cards__services">
                         <!-- CARD 1 -->
                         <div class="cards">
@@ -267,7 +275,7 @@
         <section id="proyectos" class="page-section">
             <div>
                 <div>
-                    <h2 class="proyectos__title">Proyectos destacados:</h2>
+                    <h2 class="proyectos__title">Proyectos destacados</h2>
                     <p class="proyectos__description">
                         He trabajado en muchos proyectos a lo largo de mi carrera como desarrollador web. Estos son algunos de mis proyectos del mundo real.
                     </p>
@@ -358,20 +366,20 @@
         </section>
         <section id="contactame" class="page-section">
             <div>
-                <h2>Contactate conmigo:</h2>
+                <h2>Contactate conmigo</h2>
                 <h3 class="contactame__title">¿Satisfecho conmigo?</h3>
                 <h3 class="contactame__subtitle">
                     Por favor póngase en contacto conmigo
                 </h3>
                 <div>
 
-                    <a href="mailto:hola@fabriziodev.ar">
+                    <a href="mailto:hola@fabriziodev.ar" data-tts="up" aria-label="Enviame un email">
                         <ion-icon class="icon__rrss" name="mail"></ion-icon>
                     </a>
-                    <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank">
+                    <a href="https://github.com/FabrizioFerroni" data-tts="up" aria-label="Mira mis proyectos en github" rel="nofollow noopener noreferrer" target="_blank">
                         <ion-icon class="icon__rrss" name="logo-github"></ion-icon>
                     </a>
-                    <a href="https://www.linkedin.com/in/fabrizio-ferroni/">
+                    <a href="https://www.linkedin.com/in/fabrizio-ferroni/" rel="nofollow noopener noreferrer" data-tts="up" aria-label="Seguime en linkedin">
                         <ion-icon class="icon__rrss" name="logo-linkedin"></ion-icon>
                     </a>
                 </div>
@@ -421,18 +429,19 @@
                 </form>
             </div>
         </section>
+
     </div>
     <footer>
         <div>
             <h4>@2022 Fabrizio Developer</h4>
             <div class="rrss__footer">
-                <a href="mailto:hola@fabriziodev.ar">
+                <a href="mailto:hola@fabriziodev.ar" data-tts="up" aria-label="Enviame un email">
                     <ion-icon class="icon__footer" name="mail"></ion-icon>
                 </a>
-                <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank">
+                <a href="https://github.com/FabrizioFerroni" rel="nofollow noopener noreferrer" target="_blank" data-tts="up" aria-label="Ve mis proyectos en github">
                     <ion-icon class="icon__footer" name="logo-github"></ion-icon>
                 </a>
-                <a href="https://www.linkedin.com/in/fabrizio-ferroni/">
+                <a href="https://www.linkedin.com/in/fabrizio-ferroni/" rel="nofollow noopener noreferrer" data-tts="up" aria-label="Seguime en Linkedin">
                     <ion-icon class="icon__footer" name="logo-linkedin"></ion-icon>
                 </a>
             </div>
@@ -448,7 +457,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- jQuery first -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <!-- Sweetalert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
