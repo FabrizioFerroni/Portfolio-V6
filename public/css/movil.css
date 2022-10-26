@@ -18,6 +18,54 @@
         box-shadow: 0 0 0 0 transparent !important;
     }
     
+     ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: transparent;
+    }
+    
+     :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: transparent;
+    }
+    
+     ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: transparent;
+    }
+    
+     :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: transparent;
+    }
+    
+    input::placeholder {
+        color: transparent;
+    }
+    
+    textarea::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: transparent;
+    }
+    
+    textarea:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: transparent;
+    }
+    
+    textarea::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: transparent;
+    }
+    
+    textarea:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: transparent;
+    }
+    
+    textarea::placeholder {
+        color: transparent;
+    }
+    
     .disabled {
         cursor: not-allowed;
         pointer-events: none;
@@ -42,7 +90,7 @@
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .swiper-pagination-bullet-active {
         background-color: var(--primary-color);
-        margin-top: 45px;
+        margin-top: 2.8125rem;
     }
     
     .swiper .swiper-button-next,
@@ -65,15 +113,15 @@
     .ir-arriba {
         display: none;
         background-repeat: no-repeat;
-        font-size: 25px;
-        border-radius: 8px;
+        font-size: 1.5625rem;
+        border-radius: 0.5rem;
         background-color: var(--primary-color);
         cursor: pointer;
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        bottom: 0.625rem;
+        right: 0.625rem;
         z-index: 1000;
-        padding: 8px;
+        padding: 0.5rem;
     }
     
     .ir-arriba:hover,
@@ -100,13 +148,13 @@
     
      ::-webkit-scrollbar {
         /* background: #fff;*/
-        width: 7px;
+        width: 0.4375rem;
     }
     
      ::-webkit-scrollbar-thumb {
         background: var(--primary-color);
-        height: 5px;
-        border-radius: 50px;
+        height: 0.3125rem;
+        border-radius: 3.125rem;
     }
     
      ::-webkit-scrollbar-thumb:active {
@@ -182,7 +230,7 @@
     nav {
         background-color: var(--dark-color);
         display: flex;
-        padding: 19px 15px;
+        padding: 1.1875rem 0.9375rem;
         align-items: center;
         justify-content: space-between;
         max-width: 100%;
@@ -196,7 +244,7 @@
     
     nav .nav__title h3 {
         color: var(--primary-color);
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 600;
     }
     
@@ -206,8 +254,8 @@
     }
     
     nav .nav__menu__icons a:first-child {
-        margin-right: 15px;
-        font-size: 20px;
+        margin-right: 0.9375rem;
+        font-size: 1.25rem;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -239,8 +287,8 @@
         width: 100%;
         display: block;
         /* padding-top: 50%; */
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
     }
     
     #header .nav__menu a {
@@ -270,7 +318,7 @@
     #header .nav__menu ul li:first-child {
         padding-top: 1%;
         padding-bottom: 0%;
-        right: 20px;
+        right: 1.25rem;
         position: absolute;
         top: 0;
     }
@@ -290,35 +338,35 @@
     .container {
         width: 100%;
         max-width: 100%;
-        padding: 90px 30px 0px 30px;
+        padding: 5.625rem 1.875rem 0rem 1.875rem;
     }
     
     #inicio {
         display: block;
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
     
     #inicio h3 {
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
     
     #inicio h1 {
         margin-top: 6px;
         font-style: normal;
         font-weight: 600;
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
     }
     
     #inicio p {
-        margin-top: 12px;
+        margin-top: 0.75rem;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
     }
     
     #inicio img {
@@ -329,60 +377,60 @@
         display: inline-flex;
         flex-direction: row;
         align-items: center;
-        padding: 12px 25px;
-        gap: 6px;
-        border-radius: 8px;
+        padding: 0.75rem 1.5625rem;
+        gap: 0.375rem;
+        border-radius: 0.5rem;
         color: var(--white);
         cursor: pointer;
     }
     
     #inicio .buttons__inicio {
-        margin-top: 40px;
-        margin-bottom: 15px;
+        margin-top: 2.5rem;
+        margin-bottom: 0.9375rem;
     }
     
     #inicio .btn-quien-soy {
-        margin-right: 31px;
-        height: 51.96px;
+        margin-right: 1.9375rem;
+        height: 3.2475rem;
         background: var(--primary-color);
-        border: 1px solid var(--primary-color);
+        border: 0.0625rem solid var(--primary-color);
     }
     
     #inicio .btn-mi-cv {
-        border: 2px solid var(--primary-color);
+        border: 0.125rem solid var(--primary-color);
         background-color: transparent;
     }
     
     #inicio .btn-quien-soy:hover {
         background-color: var(--secondary-color);
         color: var(--white);
-        border: 1px solid var(--secondary-color);
+        border: 0.0625rem solid var(--secondary-color);
     }
     
     #inicio .btn-mi-cv:hover {
-        border: 2px solid var(--white);
+        border: 0.125rem solid var(--white);
         color: var(--primary-color);
     }
     
     #quien-soy {
         display: block;
-        padding-top: 90px;
+        padding-top: 5.625rem;
     }
     
     #quien-soy .quien-soy__title {
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
         color: var(--primary-color);
     }
     
     #quien-soy .quien-soy__descripcion {
-        margin-top: 8px;
+        margin-top: 0.5rem;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
         text-align: justify;
         hyphens: auto;
     }
@@ -394,25 +442,25 @@
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
     
     #quien-soy .quien-soy__years h1 {
         font-style: normal;
         font-weight: 600;
-        font-size: 55px;
-        line-height: 85px;
+        font-size: 3.4375rem;
+        line-height: 5.3125rem;
         color: var(--primary-color);
-        padding-right: 0px;
+        padding-right: 0rem;
         text-align: center;
-        margin-right: 20px;
+        margin-right: 1.25rem;
     }
     
     #quien-soy .quien-soy__years h2 {
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
         text-align: justify;
         hyphens: auto;
     }
@@ -423,28 +471,28 @@
     }
     
     #quien-soy .quien-soy__cards {
-        margin-top: 19px;
+        margin-top: 1.1875rem;
     }
     
     #quien-soy .quien-soy__cards .cards {
         background: var(--cards);
-        margin-right: 0px;
-        margin-top: 19px;
-        width: 256px;
-        height: 254px;
+        margin-right: 0rem;
+        margin-top: 1.1875rem;
+        width: 16rem;
+        height: 15.875rem;
     }
     
     #quien-soy .quien-soy__cards .cards h3 {
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        padding: 153px 40px 24px 24px;
+        font-size: 1.5rem;
+        padding: 9.5625rem 2.5rem 1.5rem 1.5rem;
         position: relative;
         word-wrap: break-word;
     }
     
     #quien-soy .quien-soy__cards .cards img {
-        padding: 97px 190px 115px 24px;
+        padding: 6.0625rem 11.875rem 7.1875rem 1.5rem;
         position: absolute;
         cursor: pointer;
     }
@@ -467,32 +515,32 @@
     }
     
     #quien-soy .quien-soy__services .h2__title {
-        margin-top: 80px;
+        margin-top: 5rem;
         color: var(--primary-color);
         font-style: normal;
         font-weight: 600;
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
     }
     
     #quien-soy .quien-soy__services .quien-soy__cards__services {
-        margin-top: 32px;
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
         align-items: center;
-        gap: 35px;
+        gap: 2.1875rem;
     }
     
     #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
         width: 95%;
         /* height: 100%; */
-        height: 338px;
-        border: 3px solid #F5F5F5;
-        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
-        border-radius: 16px;
+        height: 21.125rem;
+        border: 0.1875rem solid #F5F5F5;
+        filter: drop-shadow(0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2));
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -501,18 +549,18 @@
     }
     
     #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
-        border: 3px solid var(--primary-color);
+        border: 0.1875rem solid var(--primary-color);
     }
     
     #quien-soy .quien-soy__services .quien-soy__cards__services .cards img {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
     }
     
     #quien-soy .quien-soy__services .quien-soy__cards__services .cards h2 {
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 170%;
         color: var(--white);
     }
@@ -524,8 +572,8 @@
     #quien-soy .quien-soy__services .quien-soy__cards__services .cards p {
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
         text-align: center;
     }
     
@@ -534,36 +582,36 @@
     }
     
     #proyectos .proyectos__title {
-        padding-top: 80px;
+        padding-top: 5rem;
         font-style: normal;
         font-weight: 600;
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
         color: var(--primary-color);
     }
     
     #proyectos .proyectos__description {
-        padding-top: 16px;
+        padding-top: 1rem;
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
         text-align: justify;
         hyphens: auto;
     }
     
     #proyectos .proyectos__cards {
         display: block;
-        padding-top: 36px;
+        padding-top: 2.25rem;
     }
     
     #proyectos .proyectos__cards .cards {
         width: 100%;
         height: 100%;
-        margin-top: 19px;
+        margin-top: 1.1875rem;
         background: var(--card-proyectos);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 8px;
+        box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -574,43 +622,43 @@
     }
     
     #proyectos .proyectos__cards .cards h2 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
         color: var(--primary-color);
-        padding-left: 16px;
-        padding-top: 16px;
+        padding-left: 1rem;
+        padding-top: 1rem;
         font-style: normal;
         font-weight: 600;
     }
     
     #proyectos .proyectos__cards .cards p {
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
         font-style: normal;
         font-weight: 500;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 1.0625rem;
+        padding-right: 1.0625rem;
         text-align: justify;
         hyphens: auto;
     }
     
     #proyectos .proyectos__cards img {
-        padding-top: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
     }
     
     #proyectos .proyectos__cards .cards .proyectos__update {
-        font-size: 12px;
-        padding-left: 16px;
-        padding-bottom: 16px;
+        font-size: 0.75rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
         color: var(--low-priority);
     }
     
     #proyectos .proyectos__cards .cards .proyectos__update .privado {
-        font-size: 12px;
+        font-size: 0.75rem;
         color: var(--primary-color);
     }
     
@@ -619,29 +667,29 @@
     }
     
     #proyectos .proyectos__cards .cards .proyectos__buttons {
-        margin-bottom: 6px;
+        margin-bottom: 0.375rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 12px;
-        gap: 6px;
+        padding-top: 0.75rem;
+        gap: 0.375rem;
     }
     
     #proyectos .proyectos__cards .cards .proyectos__buttons .live-btn {
-        margin-right: 0px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        width: 145px;
-        height: 43px;
+        margin-right: 0rem;
+        margin-bottom: 0.625rem;
+        margin-top: 0.625rem;
+        width: 9.0625rem;
+        height: 2.6875rem;
         background-color: var(--primary-color);
-        border: 1px solid var(--primary-color);
+        border: 0.0625rem solid var(--primary-color);
         color: var(--white);
-        border-radius: 8px;
+        border-radius: 0.5rem;
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -649,16 +697,16 @@
     }
     
     #proyectos .proyectos__cards .cards .proyectos__buttons .github-btn {
-        width: 144px;
-        height: 43px;
-        border: 2px solid var(--primary-color);
+        width: 9rem;
+        height: 2.6875rem;
+        border: 0.125rem solid var(--primary-color);
         background-color: transparent;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         color: var(--white);
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -668,17 +716,17 @@
     #proyectos .proyectos__cards .cards .proyectos__buttons .live-btn:hover {
         background-color: var(--secondary-color);
         color: var(--white);
-        border: 1px solid var(--secondary-color);
+        border: 0.0625rem solid var(--secondary-color);
     }
     
     #proyectos .proyectos__cards .cards .proyectos__buttons .github-btn:hover {
         background-color: transparent;
         color: var(--primary-color);
-        border: 2px solid var(--white);
+        border: 0.125rem solid var(--white);
     }
     
     #proyectos .proyectos__cards .cards .proyectos__buttons .icon__proyectos__btn {
-        padding-left: 5px;
+        padding-left: 0.3125rem;
     }
     
     #proyectos .mas__proyectos {
@@ -689,13 +737,13 @@
         align-content: center;
         justify-content: center;
         align-items: center;
-        margin-top: 18px;
+        margin-top: 1.125rem;
     }
     
     #proyectos .mas__proyectos a {
-        padding: 10px;
+        padding: 0.625rem;
         background-color: var(--primary-color);
-        border: 1px solid var(--primary-color);
+        border: 0.0625rem solid var(--primary-color);
         color: var(--white);
         border-radius: 8px;
         font-style: normal;
@@ -709,46 +757,46 @@
     #proyectos .mas__proyectos a:hover {
         background-color: var(--secondary-color);
         color: var(--white);
-        border: 1px solid var(--secondary-color);
+        border: 0.0625rem solid var(--secondary-color);
     }
     
     #proyectos .mas__proyectos a .icon__proyetos {
-        padding-left: 10px;
-        font-size: 30px;
+        padding-left: 0.625rem;
+        font-size: 1.875rem;
     }
     
     #contactame {
         display: block;
-        padding-top: 90px;
+        padding-top: 5.625rem;
     }
     
     #contactame h2 {
         color: var(--primary-color);
         font-style: normal;
         font-weight: 600;
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
     }
     
     #contactame .contactame__title {
         padding-top: 16px;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 1rem;
+        line-height: 1.5625rem;
     }
     
     #contactame .contactame__subtitle {
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
     }
     
     #contactame a .icon__rrss {
-        width: 25px;
-        height: 25px;
-        padding-top: 6px;
+        width: 1.5625rem;
+        height: 1.5625rem;
+        padding-top: 0.375rem;
         color: var(--primary-color);
     }
     
@@ -758,22 +806,22 @@
     }
     
     #contactame a {
-        padding-right: 16px;
+        padding-right: 1rem;
     }
     
     #contactame a:last-child {
-        padding-right: 0px;
+        padding-right: 0rem;
     }
     
     #contactame .contactame__form__title {
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
     }
     
     #contactame form {
-        padding-top: 24px;
+        padding-top: 1.5rem;
     }
     
     #contactame form .fake_placeholder {
@@ -787,17 +835,17 @@
         border: none;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         outline: none;
         padding: 0;
         resize: none;
-        width: 472px;
-        height: 62px;
+        width: 29.5rem;
+        height: 3.875rem;
         background: transparent;
         color: var(--white);
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     
     #contactame form select option.hidden {
@@ -805,47 +853,47 @@
     }
     
     #contactame form textarea {
-        width: 472px;
-        height: 98px;
-        padding-top: 15px;
+        width: 29.5rem;
+        height: 6.125rem;
+        padding-top: 0.9375rem;
     }
     
     #contactame form .fake_placeholder {
-        margin-top: 16px;
-        border-radius: 8px;
-        margin-bottom: 10px;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.625rem;
         background: var(--form-input);
-        border: 1px solid var(--form-input);
+        border: 0.0625rem solid var(--form-input);
     }
     
     #contactame form .fake_placeholder:first-child {
-        margin-top: 0px;
+        margin-top: 0rem;
     }
     
     #contactame form .fake_placeholder label {
-        border: 0px solid var(--white);
+        border: 0rem solid var(--white);
         display: inline-block;
-        padding: 5px;
+        padding: 0.3125rem;
         position: relative;
     }
     
     #contactame form .fake_placeholder span {
         color: var(--white);
         display: inline-block;
-        left: 2px;
-        padding: 5px;
+        left: 0.125rem;
+        padding: 0.3125rem;
         position: absolute;
         transition: 0.25s;
-        top: 19px;
-        left: 16px;
+        top: 1.1875rem;
+        left: 1rem;
         width: auto;
         opacity: 50%;
     }
     
     #contactame form .fake_placeholder span.reubicar {
         color: var(--primary-color);
-        font-size: 16px;
-        top: -5px;
+        font-size: 1rem;
+        top: -0.3125rem;
         opacity: 100%;
     }
     
@@ -854,16 +902,16 @@
     }
     
     #contactame form .fake_placeholder span.textarea {
-        top: 37px;
+        top: 2.3125rem;
     }
     
     #contactame form .fake_placeholder select option {
-        width: 240px;
-        height: 34px;
+        width: 15rem;
+        height: 2.125rem;
         overflow: hidden;
         background: var(--form-input);
-        border: 1px solid var(--form-input);
-        border-radius: 8px;
+        border: 0.0625rem solid var(--form-input);
+        border-radius: 0.5rem;
     }
     
     #contactame form .fake_placeholder select option::selection {
@@ -872,12 +920,12 @@
     
     #contactame form .fake_placeholder select.select-pd,
     #contactame form .fake_placeholder input.input__pl {
-        padding-left: 100px;
+        padding-left: 6.25rem;
     }
     
     #contactame form .fake_placeholder textarea.textarea__pl {
-        padding-left: 100px;
-        padding-top: 37px;
+        padding-left: 6.25rem;
+        padding-top: 2.3125rem;
     }
     
     #contactame form input:-webkit-autofill,
@@ -889,7 +937,7 @@
     #contactame form input:-webkit-autofill,
     #contactame form input:-webkit-autofill:hover,
     #contactame form input:-webkit-autofill:focus {
-        border: 1px solid var(--form-input);
+        border: 0.0625rem solid var(--form-input);
         -webkit-text-fill-color: var(--white);
         transition: background-color 100000s ease-in-out 0s;
     }
@@ -903,7 +951,7 @@
     #contactame form textarea:-webkit-autofill,
     #contactame form textarea:-webkit-autofill:hover,
     #contactame form textarea:-webkit-autofill:focus {
-        border: 1px solid var(--form-input);
+        border: 0.0625rem solid var(--form-input);
         color: var(--white);
         -webkit-text-fill-color: var(--white);
         transition: background-color 100000s ease-in-out 0s;
@@ -919,7 +967,7 @@
     #contactame form select:-webkit-autofill:hover,
     #contactame form select:-webkit-autofill:focus {
         color: var(--white);
-        border: 1px solid var(--form-input);
+        border: 0.0625rem solid var(--form-input);
         -webkit-text-fill-color: var(--white);
         transition: background-color 5000s ease-in-out 0s;
     }
@@ -928,29 +976,29 @@
         width: 100%;
         display: block;
         background: var(--primary-color);
-        border: 1px solid var(--primary-color);
-        border-radius: 8px;
-        height: 50px;
+        border: 0.0625rem solid var(--primary-color);
+        border-radius: 0.5rem;
+        height: 3.125rem;
         color: var(--white);
         cursor: pointer;
-        margin-top: 16px;
+        margin-top: 1rem;
     }
     
     #contactame form button .contactame__icon {
-        padding-left: 10px;
+        padding-left: 0.625rem;
     }
     
     #contactame form button:hover {
         background-color: var(--secondary-color);
         color: var(--white);
-        border: 1px solid var(--secondary-color);
+        border: 0.0625rem solid var(--secondary-color);
     }
     
     footer {
         display: flex;
         flex-direction: column;
-        padding: 19px 19px;
-        margin-top: 10px;
+        padding: 1.1875rem 1.1875rem;
+        margin-top: 0.625rem;
     }
     
     footer div:first-child {
@@ -960,8 +1008,8 @@
     }
     
     footer h4 {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
         font-style: normal;
         font-weight: 500;
         color: var(--white);
@@ -969,13 +1017,13 @@
     }
     
     footer .icon__footer {
-        width: 25px;
-        height: 25px;
+        width: 1.5625rem;
+        height: 1.5625rem;
         color: var(--primary-color);
     }
     
     footer .rrss__footer {
-        padding-top: 15px;
+        padding-top: 0.9375rem;
     }
     
     footer .enlaces__footer {
@@ -985,15 +1033,15 @@
         flex-direction: row;
         align-content: center;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
     
     footer .enlaces__footer .otros__links {
-        margin-right: 30px;
+        margin-right: 1.875rem;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         color: var(--white);
         opacity: 50%;
     }
@@ -1077,29 +1125,29 @@
         /* Styles */
         #quien-soy .quien-soy__cards {
             display: grid;
-            margin-top: 19px;
+            margin-top: 1.1875rem;
             align-items: center;
             justify-content: center;
             align-content: center;
             justify-items: center;
             grid-template-columns: 50% 50%;
-            gap: 20px;
+            gap: 1.25rem;
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services {
-            margin-top: 32px;
+            margin-top: 2rem;
             display: grid;
             align-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 1.25rem;
             grid-template-columns: 50% 45%;
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
             width: 100%;
-            height: 300px;
-            padding: 15px;
+            height: 18.75rem;
+            padding: 0.9375rem;
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
-            border: 3px solid var(--white);
+            border: 0.1875rem solid var(--white);
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) h2 {
             color: var(--primary-color);
@@ -1121,29 +1169,26 @@
     @media only screen and (width:768px) and (orientation: portrait) {
         #quien-soy .quien-soy__cards {
             display: grid;
-            margin-top: 19px;
+            margin-top: 1.1875rem;
             align-items: center;
             justify-content: center;
             align-content: center;
             justify-items: center;
             grid-template-columns: 45% 55%;
-            gap: 20px;
+            gap: 1.25rem;
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services {
-            margin-top: 32px;
+            margin-top: 2rem;
             display: grid;
             align-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 1.25rem;
             grid-template-columns: 50% 45%;
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services .cards {
             width: 100%;
-            height: 300px;
-            padding: 15px;
-        }
-        #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) {
-            border: 3px solid var(--white);
+            height: 18.75rem;
+            padding: 0.9375rem;
         }
         #quien-soy .quien-soy__services .quien-soy__cards__services .cards:nth-child(odd) h2 {
             color: var(--primary-color);
